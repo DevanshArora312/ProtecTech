@@ -13,12 +13,11 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import FilterListIcon from '@mui/icons-material/FilterList';
-import { blueGrey } from '@mui/material/colors';
+import AlertModal from './alertModal';
+
 interface Data {
   sosId: number;
   username: string;
@@ -142,34 +141,7 @@ export default function AlertTable() {
                     <TableCell>{row.signalSource}</TableCell>
                     <TableCell>{row.time}</TableCell>
                     <TableCell align="right">
-                      <Button variant="contained" sx={{bgcolor: blueGrey[900]}} onClick={handleOpen}>
-                        Take Action
-                      </Button>
-                      <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                      >
-                        <Box sx={{
-                          position: 'absolute',
-                          top: '50%',
-                          left: '50%',
-                          transform: 'translate(-50%, -50%)',
-                          width: 400,
-                          bgcolor: 'background.paper',
-                          border: '2px solid #000',
-                          boxShadow: 24,
-                          p: 4,
-                        }}>
-                          <Typography id="modal-modal-title" variant="h6" component="h2">
-                            Action Required
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            Please take appropriate action for SOS ID: {row.sosId}.
-                          </Typography>
-                        </Box>
-                      </Modal>
+                      <AlertModal/>
                     </TableCell>
                   </TableRow>
                 );
