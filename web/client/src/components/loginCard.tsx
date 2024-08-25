@@ -15,14 +15,14 @@ export default function LoginCard() {
         <div className='bg-[#263238] h-[100px] text-white flex flex-col items-center justify-center text-4xl font-bold'>
             ProtecTech
         </div>
-        <CardContent className='flex flex-col gap-2'>
+        <CardContent className='flex flex-col gap-2 items-center justify-center'>
           <Typography variant="body2" color="text.secondary">
               <TextField id="outlined-basic" label="Username" variant="outlined" sx={{width: 400}}/>
           </Typography>
           <Typography variant="body2" color="text.secondary">
               <TextField id="outlined-basic" label="Password" variant="outlined" sx={{width: 400}}/>
           </Typography>
-          <div>
+          <div className='flex flex-col items-center justify-center'>
               <div className='text-lg hover:text-blue-800 hover:underline cursor-pointer'>
                   New Here?
               </div>

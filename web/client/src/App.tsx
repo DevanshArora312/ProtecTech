@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="h-screen">
       <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<Login/>}/>
         <Route path="/dashboard" element={<Dashboard/>}>
           <Route path="/dashboard" element={<Navigate to={"/dashboard/alerts"} replace/>}/>
