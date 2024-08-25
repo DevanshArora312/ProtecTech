@@ -7,6 +7,8 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import GaugeChart from '../components/GaugeChart';
 import MyBarChart from '../components/BarChart';
 import ScatterPlot from '../components/ScatterPlot';
+import Line from '../components/Line';
+
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -51,6 +53,12 @@ export function Analytics() {
                 <ScatterPlot data1={item?.data1} data2={item?.data2}/>
               </div>
             }
+            {
+              item.type === 'line' && 
+              <div className='flex flex-col items-center justify-center pb-4 font-bold'>
+                <Line place1={item?.place1} place2={item?.place2} xLabels={item?.xLabels}/>
+              </div>
+            }
           </Paper>
         ))}
       </Masonry>
@@ -60,7 +68,6 @@ export function Analytics() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
     title: 'Monthly Alerts',
     type: 'bar chart',
     dataPoints: [
@@ -71,13 +78,11 @@ const itemData = [
     id: ['Monthly Alerts']
   },
   {
-    img: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
     title: 'AI Alert Accuracy',
     type: 'gauge chart',
     data: 80
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
     title: 'Monthly Alerts (Gender Distribution)',
     type: 'bar chart',
     dataPoints: [
@@ -88,7 +93,6 @@ const itemData = [
     id: ['Monthly Alerts (Gender Distribution)']
   },
   {
-    img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
     title: 'Alert Distribution (Age and Gender)',
     type: 'scatter plot',
     data1: [
@@ -110,33 +114,30 @@ const itemData = [
       { x: 30, y: 500, id: 8 },
     ],
   },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-  //   title: 'Alert Distribution (Location)',
-  //   type: 'heatmap'
-  // },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    title: 'Alert Distribution (Location)',
+    type: 'line',
+    place1: [2400, 1398, 9800, 3908, 4800, 4400],
+    place2: [2800, 2398, 4800, 1908, 2800, 1400],
+    xLabels: ["march", "april", "may", "june", "july", "august"]
+  },
+  {
     title: 'Planned',
     type: 'unknown'
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
     title: 'Planned',
     type: 'unknown'
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
     title: 'Planned',
     type: 'unknown'
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
     title: 'Planned',
     type: 'unknown'
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
     title: 'Planned',
     type: 'unknown'
   },
