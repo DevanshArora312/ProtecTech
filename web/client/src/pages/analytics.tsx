@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import GaugeChart from '../components/GaugeChart';
 import MyBarChart from '../components/BarChart';
+import ScatterPlot from '../components/ScatterPlot';
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -45,19 +46,10 @@ export function Analytics() {
               </div>
             }
             {
-              item.type !== 'unknown' && item.type !== 'gauge chart' && item.type !== 'bar chart' && 
-              <img
-                srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=162&auto=format`}
-                alt={item.title}
-                loading="lazy"
-                style={{
-                  borderBottomLeftRadius: 4,
-                  borderBottomRightRadius: 4,
-                  display: 'block',
-                  width: '100%',
-                }}
-              />
+              item.type === 'scatter plot' && 
+              <div className='flex flex-col items-center justify-center pb-4 font-bold'>
+                <ScatterPlot data1={item?.data1} data2={item?.data2}/>
+              </div>
             }
           </Paper>
         ))}
@@ -98,13 +90,31 @@ const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
     title: 'Alert Distribution (Age and Gender)',
-    type: 'scatter plot'
+    type: 'scatter plot',
+    data1: [
+      { x: 20, y: 200, id: 1 },
+      { x: 32, y: 100, id: 2 },
+      { x: 27, y: 300, id: 3 },
+      { x: 34, y: 250, id: 4 },
+      { x: 45, y: 400, id: 5 },
+      { x: 11, y: 280, id: 6 },
+    ],
+    data2: [
+      { x: 30, y: 300, id: 1 },
+      { x: 40, y: 500, id: 2 },
+      { x: 20, y: 700, id: 3 },
+      { x: 30, y: 350, id: 4 },
+      { x: 56, y: 500, id: 5 },
+      { x: 23, y: 780, id: 6 },
+      { x: 50, y: 400, id: 7 },
+      { x: 30, y: 500, id: 8 },
+    ],
   },
-  {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Alert Distribution (Location)',
-    type: 'heatmap'
-  },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+  //   title: 'Alert Distribution (Location)',
+  //   type: 'heatmap'
+  // },
   {
     img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
     title: 'Planned',
