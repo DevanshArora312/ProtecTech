@@ -5,8 +5,7 @@ import Masonry from '@mui/lab/Masonry';
 import { styled } from '@mui/material/styles';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import GaugeChart from '../components/GaugeChart';
-import { blueGrey } from '@mui/material/colors';
-
+import MyBarChart from '../components/BarChart';
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -20,7 +19,7 @@ const Label = styled(Paper)(({ theme }) => ({
 export function Analytics() {
   return (
     <Box sx={{ width: '100%', minHeight: 829 }}>
-      <Masonry columns={3} spacing={2}>
+      <Masonry columns={2} spacing={2}>
         {itemData.map((item, index) => (
           <Paper key={index}>
             <div className='flex flex-col items-center justify-center pb-4'>{item?.title}</div>
@@ -40,7 +39,13 @@ export function Analytics() {
               </div>
             }
             {
-              item.type !== 'unknown' && item.type !== 'gauge chart' && 
+              item.type === 'bar chart' && 
+              <div className='flex flex-col items-center justify-center pb-4 font-bold'>
+                  <MyBarChart data={item?.dataPoints} labels={item?.labels} xLabels={item?.xLabels} id={item?.id}/>
+              </div>
+            }
+            {
+              item.type !== 'unknown' && item.type !== 'gauge chart' && item.type !== 'bar chart' && 
               <img
                 srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=162&auto=format`}
@@ -65,7 +70,13 @@ const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
     title: 'Monthly Alerts',
-    type: 'bar chart'
+    type: 'bar chart',
+    dataPoints: [
+      [2400, 1398, 9800, 3908, 4800]
+    ],
+    xLabels: ["april", "may", "june", "july", "august"],
+    labels: ['Monthly Alerts'],
+    id: ['Monthly Alerts']
   },
   {
     img: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
@@ -75,8 +86,14 @@ const itemData = [
   },
   {
     img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Gender Distribution',
-    type: 'bar chart'
+    title: 'Monthly Alerts (Gender Distribution)',
+    type: 'bar chart',
+    dataPoints: [
+      [2400, 200]
+    ],
+    xLabels: ["Female", "Male"],
+    labels: ['Monthly Alerts (Gender Distribution)'],
+    id: ['Monthly Alerts (Gender Distribution)']
   },
   {
     img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
