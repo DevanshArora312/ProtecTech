@@ -2,37 +2,88 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 // import {createNativeStackNavigator} from '@react-navigation/native-stack';
-// import {createBottomTabNavigator } from "@react-navigation/bottom-tabs";';
+import {createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 // import { Image, Text, View } from 'react-native';
 import Home from './screens/Home';
 import { Button, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Panic from './screens/Panic';
 import ThreatDetect from './screens/ThreatDetect';
-
+import { TabIconPropType } from './Types';
+import Chat from './screens/Chat';
+import Header from './components/Header';
 
 const Drawer = createDrawerNavigator();
+const Tab = createBottomTabNavigator();
 
-const Header = ({ navigation, route }:{navigation:any, route:any, options:any}) =>{
-        // console.log(route,navigation,options);
-        return (
-            <View className="bg-black text-white flex-row py-5 px-2 items-center justify-between">
-                <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-                    <Text className="text-center">
-                        <Icon name="menu" size={30} color="#fff" />
-                    </Text>
-                </TouchableOpacity>
-                <Text className="text-[30px]">
-                    {route.name === 'Home' ? 'Send an Alert' : route.name }!
-                </Text>
-                <Button
-                    title=""
-                    // onPress={() => navigation.toggleDrawer()} // Opens the drawer
-                    color="#000"
-                />
-            </View>
-        );
-      };
+const TabIcon = ({ icon, color, name, focused } : TabIconPropType ) => {
+  if(!focused) icon = icon+'-outline';
+  return (
+    <View className="flex items-center justify-center gap-1">
+      <Icon name={icon} size={30} color={color} />
+      <Text
+        className={`${focused ? "font-psemibold" : "font-pregular"} text-sm`}
+        style={{ color: color }}
+      >
+        {name}
+      </Text>
+    </View>
+  );
+};
+
+
+const TabRoot = () => {
+  return(
+    <Tab.Navigator
+      screenOptions={{
+        headerShown : false,
+        tabBarActiveTintColor: "#FE5E5C",
+        tabBarInactiveTintColor: "#282e34",
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          backgroundColor: "#FFFFFF",
+          borderTopWidth: 1,
+          borderTopColor: "#FFFFFF",
+          height: 64,
+        },
+      }}
+    >
+      <Tab.Screen 
+        name="Recent" 
+        component={Home} 
+        options={{
+          title: "Home",
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <TabIcon
+              icon={"home"}
+              color={color}
+              name="Home"
+              focused={focused}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Page 2" 
+        component={Chat} 
+        options={{
+          title: "Chat",
+          headerShown: false,
+          unmountOnBlur:true,
+          tabBarIcon: ({ color, focused }) => (
+            <TabIcon
+              icon={"chat"}
+              color={color}
+              name="Chat with us"
+              focused={focused}
+            />
+          ),
+        }}  
+      />
+    </Tab.Navigator>
+  )
+}
 
 const Index = () => {
     return (
@@ -52,7 +103,7 @@ const Index = () => {
             }
           }
         >
-          <Drawer.Screen name="Home" component={Home}  />
+          <Drawer.Screen name="Home" component={TabRoot}  />
           <Drawer.Screen name="Panic" component={Panic}  />
           <Drawer.Screen name="ThreatDetect" component={ThreatDetect}  />
           {/* <Drawer.Screen name="Profile" component={Profile}  />  */}
