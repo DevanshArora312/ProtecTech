@@ -21,7 +21,7 @@ const Chat = () => {
         },3000);
     },[])
     return (
-    <SafeAreaView className='w-full flex-1 justify-between py-4'>
+    <SafeAreaView className='w-full flex-1 justify-between py-3'>
         {
             loading ? 
             null : 
