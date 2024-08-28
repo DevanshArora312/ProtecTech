@@ -21,7 +21,7 @@ const Chat = () => {
         },3000);
     },[])
     return (
-    <SafeAreaView className='w-full flex-1 justify-between py-4'>
+    <SafeAreaView className='w-full flex-1 justify-between py-3'>
         {
             loading ? 
             null : 
@@ -53,8 +53,8 @@ const Chat = () => {
             
         }
         <View className='flex-row items-center justify-between p'>
-            <TextInput className='rounded-full p-4 h-18 w-[85%] bg-white' placeholder='Enter a message'/>
-            <TouchableOpacity className="w-[50px] h-[50px] bg-[#FE5E5C] rounded-full justify-center items-center" onPress={() => console.log("hehe")}>
+            <TextInput className='rounded-full p-4 h-18 w-[85%] bg-white border-[1px] border-black' placeholder='Enter a message'/>
+            <TouchableOpacity className="w-[55px] h-[55px] bg-[#FE5E5C] rounded-full justify-center items-center" onPress={() => console.log("hehe")}>
                     <Icon name="send" size={30} color="white" />
             </TouchableOpacity>
         </View>
