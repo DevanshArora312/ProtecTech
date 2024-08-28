@@ -7,15 +7,10 @@ import ScanningAnimation from '../components/scanner';
 const ThreatDetect = () => {
     const imgData  = [require('../../assets/images/image1.png'),require('../../assets/images/image2.png'),require('../../assets/images/image3.png')];
     const [scanning,setScanning] = useState<Boolean>(false);
+    const [result,setResult] = useState<Boolean>(false);
   return (
     <ScrollView className={`w-full p-5`}>
-        {
-            scanning ?
-            <View className='w-full h-50'>
-                <ScanningAnimation/>
-            </View>
-            : null
-        }
+        
         <View className='text-black'>
             <Text className='text-black text-[20px] font-semibold'>
                 Scan nearby threats with a single click!
@@ -24,27 +19,39 @@ const ThreatDetect = () => {
         <View className='items-center'>
             <ClickAnimation/>
         </View>
-        <View className='w-full items-center my-3'>
+        <View className='w-full items-center my-3 gap-y-4'>
             {
-                scanning ? 
-                <TouchableOpacity
-                    className='w-full px-5 py-3 bg-red-500 rounded-xl'
-                    onPress={() => setScanning(!scanning)}
-                >
-                    <Text className='text-center text-[20px] font-mono'>
-                        Cancel
+                scanning ?
+                <View className='w-full h-50'>
+                    <ScanningAnimation/>
+                </View>
+                : result ? 
+                <View className='w-full justify-center items-center'>
+                    <Text className='text-[25px] font-bold text-green-400'>
+                        You are Safe!
                     </Text>
-                </TouchableOpacity>
-                :
-                <TouchableOpacity
-                    className='w-full px-5 py-3 bg-blue-500 rounded-xl'
-                    onPress={() => setScanning(!scanning)}
-                >
-                    <Text className='text-center text-[20px] font-mono'>
-                        Scan my Surroundings
-                    </Text>
-                </TouchableOpacity>
+                </View>
+                : null
             }
+            <TouchableOpacity
+                className={`w-full px-5 py-3 ${scanning ? "bg-red-500" : "bg-blue-500"} rounded-xl`}
+                onPress={() => {
+                    const local = scanning;
+                    setScanning(!scanning)
+                    if(!local){
+                        setTimeout(()=>{
+                            setScanning(false);
+                            setResult(true);
+                        },2000);
+                    }
+                    if(local) setResult(false);
+                }}
+            >
+                <Text className='text-center text-[20px] font-mono'>
+                    {scanning  ? "Cancel" : "Scan my Surroundings"}
+                </Text>
+            </TouchableOpacity>
+                
         </View>
         <View className='text-black'>
             <Text className='text-black text-[20px] font-semibold'>
