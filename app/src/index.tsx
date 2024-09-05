@@ -12,6 +12,7 @@ import ThreatDetect from './screens/ThreatDetect';
 import { TabIconPropType } from './Types';
 import Chat from './screens/Chat';
 import Header from './components/Header';
+import Profile from './screens/Profile';
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
@@ -106,7 +107,7 @@ const Index = () => {
           <Drawer.Screen name="Home" component={TabRoot}  />
           <Drawer.Screen name="Panic" component={Panic}  />
           <Drawer.Screen name="ThreatDetect" component={ThreatDetect}  />
-          {/* <Drawer.Screen name="Profile" component={Profile}  />  */}
+          <Drawer.Screen name="Profile" component={Profile}  /> 
         </Drawer.Navigator>
       </NavigationContainer>
     );
