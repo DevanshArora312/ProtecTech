@@ -1,7 +1,9 @@
 from flask import Flask, Response
+from flask_cors import CORS
 import cv2
 
 app = Flask(__name__)
+CORS(app)
 
 def generate_frames():
     camera = cv2.VideoCapture(0)
@@ -22,5 +24,5 @@ def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
+    print("app running at port number 5000")
     app.run(host='0.0.0.0', port=5000)
-
