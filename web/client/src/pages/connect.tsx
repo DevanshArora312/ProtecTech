@@ -1,16 +1,12 @@
 import React from 'react'
-
+import { CCTVcard } from '../components/cctvCard'
 export const Connect = () => {
+  const port = 5000
+  const ip = '0.0.0.0';
   return (
-    <div>
-      <div>
-        <h1>Live Video Feed</h1>
-        <img
-          id="video-feed"
-          src="http://localhost:5000/video_feed" 
-          alt="Live Video Feed"
-          style={{ width: '100%', height: 'auto' }} 
-        />
+    <div className='w-full'>
+      <div className='w-full flex flex-row items-center justify-center'>
+        <CCTVcard ip={ip} port={port}/>
       </div>
     </div>
   )
