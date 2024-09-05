@@ -12,6 +12,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import cctvImage from '../assets/cctv.jpg';
+import {Button} from '@mui/material';
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -56,6 +57,7 @@ export function CCTVcard({ip, port} : cctvprops) {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const today = date.getDate().toString() + " " + months[date.getMonth()] + " " + date.getFullYear().toString();
 
+  const [connect, setConnect] = React.useState<boolean>(false);
 
   return (
     <Card sx={{ width: 450 }}>
@@ -73,12 +75,16 @@ export function CCTVcard({ip, port} : cctvprops) {
         title="Shrimp and Chorizo Paella"
         subheader={today}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={cctvImage}
-        alt="cctv live footage"
-      />
+      {
+        !connect ?         
+        <CardMedia
+          component="img"
+          height="194"
+          image={cctvImage}
+          alt="cctv live footage"
+        /> :
+        <img src={connect ? 'http://' + ip + `:${port}/video_feed` : ''}/>
+      }
       <CardContent>
       </CardContent>
       <CardActions disableSpacing>
@@ -88,6 +94,13 @@ export function CCTVcard({ip, port} : cctvprops) {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
+        <Button variant='contained' onClick={()=>{
+          setConnect(!connect);
+        }}>
+        {
+          connect ? "Disconnect" : "Connect"
+        }
+        </Button>
       </CardActions>
     </Card>
   );

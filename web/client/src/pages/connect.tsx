@@ -6,7 +6,7 @@ import { FormControl, InputLabel, Select, MenuItem, SelectChangeEvent } from '@m
 
 export const Connect = () => {
   const port = 5000
-  const ip = '0.0.0.0';
+  const ip = '192.168.0.194';
   const locations = [
     'Central Park, NYC',
     'Golden Gate Bridge, SF',
