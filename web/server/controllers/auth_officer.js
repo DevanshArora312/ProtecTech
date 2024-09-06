@@ -78,21 +78,32 @@ exports.signup = async (req, res) => {
 };
 const login = async(req, res)=>{
     try{
-        const {
-            firstname, lastname,
-            email, mobile, password, 
-            stars, role, department, thana_id
-        } = req.body;
-
-
-        if(!firstname || !lastname || !email || !mobile || !password || !stars || !role || !department || !thana_id){
-            return res.status(200).json({
-                success: 400,
-                message: "all fields are required"
-            })
-        }
-
-
+		const {email, password} = req.body;
+		if(!email || !password) {
+			return res.status(400).json({
+				success: false,
+				message: "Email and password are required"
+			})
+		}
+		const officer = await Officer.findOne({email: email })
+		if(!officer){
+			return res.status(404).json({
+				success: false,
+				message: "Officer not found"
+			})
+		}
+		if(await bycrypt.compare(passwprd, officer.password)){
+			return res.status(200).json({
+				success: true,
+				message: "Officer logged in successfully"
+			})
+		}
+		else{
+			return res.status(401).json({
+				success: false,
+				message: "password is incorrect"
+			})
+		}
     } catch(err){
         console.log(err);
         return res.status(500).json({
