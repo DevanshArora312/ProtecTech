@@ -1,6 +1,22 @@
-import { TextField, Card, CardHeader, CardMedia, CardContent, CardActions, Avatar, Typography, Button } from '@mui/material';
+import React, { ChangeEvent, useState } from 'react';
+import { TextField, Card, CardHeader, CardContent, CardActions, Avatar, Typography, Button } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
+import { AUTH } from '../services/apis';
+
 export default function LoginCard() {
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleUsernameChange = (event : ChangeEvent<HTMLInputElement>) => {
+    setUsername(event.target.value);
+  };
+
+  const handlePasswordChange = (event : ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
+
+  
   return (
     <Card sx={{ minWidth: 450 }}>
         <CardHeader
@@ -17,10 +33,25 @@ export default function LoginCard() {
         </div>
         <CardContent className='flex flex-col gap-2 items-center justify-center'>
           <Typography variant="body2" color="text.secondary">
-              <TextField id="outlined-basic" label="Username" variant="outlined" sx={{width: 400}}/>
+              <TextField
+                id="username"
+                label="Username"
+                variant="outlined"
+                sx={{ width: 400 }}
+                value={username}
+                onChange={handleUsernameChange}
+              />
           </Typography>
           <Typography variant="body2" color="text.secondary">
-              <TextField id="outlined-basic" label="Password" variant="outlined" sx={{width: 400}}/>
+              <TextField
+                id="password"
+                label="Password"
+                variant="outlined"
+                sx={{ width: 400 }}
+                type="password"
+                value={password}
+                onChange={handlePasswordChange}
+              />
           </Typography>
           <div className='flex flex-col items-center justify-center'>
               <div className='text-lg hover:text-blue-800 hover:underline cursor-pointer'>
@@ -32,7 +63,7 @@ export default function LoginCard() {
           </div>
         </CardContent>
         <CardActions disableSpacing className='flex flex-col items-center'>
-          <Button variant="contained" sx={{bgcolor: blueGrey[900]}}>Login</Button>
+          <Button variant="contained" sx={{ bgcolor: blueGrey[900] }}>Login</Button>
         </CardActions>
     </Card>
   );

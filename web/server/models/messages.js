@@ -19,6 +19,10 @@ const OfficerMessagesSchema = new mongoose.Schema({
     latitude: {
         type: Number,
         required: true,
+    },
+    officerriginated: {
+        type: Boolean,
+        default: false
     }
 });
 
