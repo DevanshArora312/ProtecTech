@@ -15,4 +15,5 @@ const panicSchema = new mongoose.model.Schema({
     }
 });
 
-module.exports = mongoose.model("panic", panicSchema);
+const Panic = new mongoose.model("Panic", panicSchema);
+module.exports = Panic;

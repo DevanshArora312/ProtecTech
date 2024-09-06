@@ -46,4 +46,5 @@ const officerSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model("Officer", officerSchema);
+const Officers = new mongoose.model("Officer", officerSchema);
+module.exports = Officers;
