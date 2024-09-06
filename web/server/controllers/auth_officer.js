@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Officer = require("../models/officers.js");
 const bcrypt = require("bcrypt");
-
+const jwt = require("jsonwebtoken");
 
 exports.signup = async (req, res) => {
 	try {
@@ -93,8 +93,13 @@ const login = async(req, res)=>{
 			})
 		}
 		if(await bycrypt.compare(passwprd, officer.password)){
+			const token = jwt.sign(
+				{email: user.email},
+				process.env.JWT_SECRET
+			)
 			return res.status(200).json({
 				success: true,
+				token,
 				message: "Officer logged in successfully"
 			})
 		}
