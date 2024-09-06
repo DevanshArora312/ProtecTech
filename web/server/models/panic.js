@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const panicSchema = new mongoose.model.Schema({
+const panicSchema = new mongoose.Schema({
     panicId: {
         type: Number,
         required: true,
@@ -10,8 +10,13 @@ const panicSchema = new mongoose.model.Schema({
         ref: 'User',
         required: true
     },
-    location: {
-        type: String,
+    longitude: {
+        type: Number,
+        required: true
+    },
+    latitude: {
+        type: Number,
+        required: true
     }
 });
 
