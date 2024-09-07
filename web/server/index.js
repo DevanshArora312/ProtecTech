@@ -5,7 +5,8 @@ const dotenv = require("dotenv");
 const socket = require("socket.io");
 const authRoutes = require('./routes/auth.js');
 const {dbconnect} = require("./config/database.js");
-const PoliceStation = require("./models/station.js")
+const PoliceStation = require("./models/station.js");
+const Panic = require("./models/panic.js");
 const http = require("http");
 const server = http.createServer(app);
 
@@ -61,12 +62,16 @@ io.on("connection", async(socket)=>{
               }
             });
         
-            if (nearestStation) {
-              console.log(`Nearest Police Station: ${nearestStation.name}`);
-            } else {
-              console.log("No police station found nearby");
-            }
-          } catch (error) {
+            const panicSignal = await Panic.create({
+                user: user_id,
+                longitude,
+                latitude
+            });
+
+            nearestStation.alerts.push(panicSignal._id)
+
+            await nearestStation.save();
+        } catch (error) {
             console.error("Error finding nearest police station:", error);
         }
     });
