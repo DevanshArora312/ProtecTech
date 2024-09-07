@@ -59,6 +59,17 @@ const userSchema = new mongoose.Schema(
         criminalBackground: {
             type: Boolean,
             default: false
+        },
+        location: {
+            type: {
+            type: String, 
+            enum: ['Point'], 
+            required: true
+            },
+            coordinates: {
+            type: [Number],
+            required: true
+            }
         }
     }
 );
