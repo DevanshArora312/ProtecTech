@@ -40,7 +40,7 @@ const Detect = () => {
             {
                 users.length > 0 && 
                 <div>
-                    <NearbyCard/>
+                    <NearbyCard users={users}/>
                 </div>
             }
         </div>
