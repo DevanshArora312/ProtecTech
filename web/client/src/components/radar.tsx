@@ -28,7 +28,6 @@ export default function Radar() {
         </CardContent>
         <CardActions>
           <Button size="small" variant='outlined'>Detect</Button>
-          <Button size="small" variant='contained'>Use AI Prediction</Button>
         </CardActions>
       </Card>
     );
