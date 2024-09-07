@@ -43,6 +43,14 @@ server.listen(PORT, ()=>{
 
 io.on("connection", async(socket)=>{
     const socket_id = socket.id;
+    
+    const id = socket.handshake.query["station_id"];
+    
+    console.log(id);
+    
+    if(Boolean(id)){
+        PoliceStation.findByIdAndUpdate(id, {socket_id});
+    }
 
     console.log(`user connected ${socket_id}`);
     
@@ -79,8 +87,18 @@ io.on("connection", async(socket)=>{
             nearestStation.alerts.push(panicSignal._id)
 
             await nearestStation.save();
+            
+            const populatedStation = await PoliceStation.findById(nearestStation._id).populate("alerts");
+
+            if (nearestStation.socket_id) {
+              io.to(nearestStation.socket_id).emit("updateAlerts", {
+                alerts: populatedStation.alerts,
+              });
+            }
+        
         } catch (error) {
             console.error("Error finding nearest police station:", error);
         }
     });
+    
 })

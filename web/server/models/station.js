@@ -17,6 +17,7 @@ const PoliceStationSchema = new mongoose.Schema({
       }
     },
     address: String,
+    socket_id: String,
     alerts: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Panic'
