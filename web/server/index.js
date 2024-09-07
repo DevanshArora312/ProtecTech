@@ -10,6 +10,7 @@ const PoliceStation = require("./models/station.js");
 const Panic = require("./models/panic.js");
 const http = require("http");
 const server = http.createServer(app);
+const cron = require('node-cron');
 
 dotenv.config();
 
@@ -45,6 +46,11 @@ io.on("connection", async(socket)=>{
 
     console.log(`user connected ${socket_id}`);
     
+    cron.schedule('0 * * * *', () => {
+        console.log('Cron Job triggered');
+        io.emit('locationRequest', { message: 'location update' });
+    })
+
     socket.on("messageByOfficer", async(data)=>{
         const {user_id, text, longitude, latitude} = data;
         console.log(user_id, text, longitude, latitude);
