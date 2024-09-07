@@ -46,10 +46,10 @@ io.on("connection", async(socket)=>{
     
     const id = socket.handshake.query["station_id"];
     
-    console.log(id);
-    
     if(Boolean(id)){
-        PoliceStation.findByIdAndUpdate(id, {socket_id});
+        console.log("updating...");
+        await PoliceStation.findByIdAndUpdate(id, {socket_id});
+        console.log("updated");
     }
 
     console.log(`user connected ${socket_id}`);

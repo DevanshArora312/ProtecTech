@@ -12,7 +12,7 @@ import Trace from './pages/trace';
 function App() {
   useEffect(()=>{
     if(!socket)
-      FullDuplexConnection();
+      FullDuplexConnection('66dc1dc80eb2e01f712ed18a');
   }, [socket]);
   console.log(socket)
   return (

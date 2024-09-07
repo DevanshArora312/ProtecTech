@@ -52,7 +52,7 @@ export default function AlertModal() {
   };
   const submitHandler = async()=>{
     if(!socket){
-        FullDuplexConnection();
+        FullDuplexConnection('66dc1dc80eb2e01f712ed18a');
     }
     console.log("emitting...")
     socket.emit("messageByOfficer", {
