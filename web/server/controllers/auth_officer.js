@@ -8,10 +8,11 @@ exports.signup = async (req, res) => {
 		const {
             firstname, lastname,
             email, mobile, password, 
+			username,
             stars, role, department, thana_id
 		} = req.body;
 
-		if(!firstname || !lastname || !email || !mobile || !password || !stars || !role || !department || !thana_id) {
+		if(!firstname || !lastname || !username || !email || !mobile || !password || !stars || !role || !department || !thana_id) {
 			return res.status(404).json({
 				success: false,
 				message: "all fields are required",
@@ -53,15 +54,16 @@ exports.signup = async (req, res) => {
 			contactNumber: null,
 		});
 		const user = await User.create({
-			firstName,
-			lastName,
+			firstname,
+			lastname,
+			username,
 			email,
 			contactNumber,
 			password: hashedPassword,
 			accountType: accountType,
 			approved: approved,
 			additionalDetails: profileDetails._id,
-			image: `https://api.dicebear.com/5.x/initials/svg?seed=${firstName} ${lastName}`,
+			image: `https://api.dicebear.com/5.x/initials/svg?seed=${firstname} ${lastname}`,
 		});
 		return res.status(200).json({
 			success: true,
@@ -76,23 +78,24 @@ exports.signup = async (req, res) => {
 		});
 	}
 };
-const login = async(req, res)=>{
+exports.login = async(req, res)=>{
     try{
-		const {email, password} = req.body;
-		if(!email || !password) {
+		const {username, password} = req.body;
+		if(!username || !password) {
+			console.log("email and password are required");
 			return res.status(400).json({
 				success: false,
 				message: "Email and password are required"
 			})
 		}
-		const officer = await Officer.findOne({email: email })
+		const officer = await Officer.findOne({username: username })
 		if(!officer){
 			return res.status(404).json({
 				success: false,
 				message: "Officer not found"
 			})
 		}
-		if(await bycrypt.compare(passwprd, officer.password)){
+		if(await bcrypt.compare(password, officer.password)){
 			const token = jwt.sign(
 				{email: user.email},
 				process.env.JWT_SECRET

@@ -10,6 +10,12 @@ const officerSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
+    username:{
+        type: String,
+        trim: true,
+        required: true,
+        unique: true
+    },
     email: {
         type: String,
         required: true,

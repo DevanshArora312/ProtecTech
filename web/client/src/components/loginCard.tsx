@@ -2,12 +2,22 @@ import React, { ChangeEvent, useState } from 'react';
 import { TextField, Card, CardHeader, CardContent, CardActions, Avatar, Typography, Button } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
 import { AUTH } from '../services/apis';
-
+import { apiConnector } from '../services/apiConnector';
 export default function LoginCard() {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const submitHandler = async()=>{
+    if(!password || !username) return;
+    try{
+      console.log("pls wait");
+      const response = await apiConnector({method: "POST", url : AUTH.login, bodyData: {username, password}});
+      console.log(response);
+    } catch(err){
+
+    }
+  }
   const handleUsernameChange = (event : ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value);
   };
@@ -63,7 +73,7 @@ export default function LoginCard() {
           </div>
         </CardContent>
         <CardActions disableSpacing className='flex flex-col items-center'>
-          <Button variant="contained" sx={{ bgcolor: blueGrey[900] }}>Login</Button>
+          <Button variant="contained" sx={{ bgcolor: blueGrey[900] }} onClick={submitHandler}>Login</Button>
         </CardActions>
     </Card>
   );

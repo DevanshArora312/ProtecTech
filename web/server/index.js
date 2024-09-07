@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const dotenv = require("dotenv");
 const socket = require("socket.io");
+const authRoutes = require('./routes/auth.js');
 const {dbconnect} = require("./config/database.js");
 
 const http = require("http");
@@ -20,6 +21,8 @@ app.use(
         credentials: true
     })
 )
+
+app.use("/api/v1/", authRoutes);
 
 const io = socket(server, {
     cors: {
