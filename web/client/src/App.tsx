@@ -8,6 +8,7 @@ import { Analytics } from './pages/analytics';
 import { Connect } from './pages/connect';
 import { FullDuplexConnection, socket } from './socket';
 import Detect from './pages/detect';
+import Trace from './pages/trace';
 function App() {
   useEffect(()=>{
     if(!socket)
@@ -23,6 +24,7 @@ function App() {
           <Route path="/dashboard" element={<Navigate to={"/dashboard/alerts"} replace/>}/>
           <Route path="/dashboard/alerts" element={<Alerts/>}/>
           <Route path="/dashboard/detect/:latitude/:longitude" element={<Detect/>}/>
+          <Route path="/dashboard/trace/:latitude/:longitude" element={<Trace/>}/>
           <Route path="/dashboard/analytics" element={<Analytics/>}/>
           <Route path="/dashboard/connect" element={<Connect/>}/>
         </Route>
