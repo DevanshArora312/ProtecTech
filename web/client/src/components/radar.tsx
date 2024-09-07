@@ -6,8 +6,46 @@ import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 import radar from '../assets/animated_radar.gif';
 import { Slider } from '@mui/material';
+import { apiConnector } from '../services/apiConnector';
+import { DETECT } from '../services/apis';
 
-export default function Radar() {
+enum gender {
+  "Male",
+  "Female",
+}
+
+interface user{
+  firstname: string,
+  lastname: string,
+  email: string,
+  mobile: string,
+  image: string,
+  bookmarkedContact: string[],
+  age: number,
+  gender: gender,
+  isEmployed: boolean,
+  employer: string,
+  occupation: string,
+  maritalStatus: boolean,
+  criminalBackground: boolean
+}
+
+interface radarProps {
+    distance: number,
+    latitude: number,
+    longitude: number,
+    setUsers: React.Dispatch<React.SetStateAction<user[]>>
+}
+
+export default function Radar({distance, latitude, longitude, setUsers} : radarProps) {
+    const detectHandler = async()=>{
+        try{
+            const response = await apiConnector({method : "POST", url: DETECT.login, bodyData: {distance, latitude, longitude}});
+            setUsers(response.data);
+        } catch(err){
+            console.log(err);
+        }
+    }
     return (
       <Card sx={{ maxWidth: 450 }}>
         <CardMedia
@@ -27,7 +65,7 @@ export default function Radar() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" variant='outlined'>Detect</Button>
+          <Button size="small" variant='outlined' onClick={detectHandler}>Detect</Button>
         </CardActions>
       </Card>
     );

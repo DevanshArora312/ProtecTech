@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const userSchema = new mongoose.Schema(
     {
         firstname: {
@@ -14,12 +15,7 @@ const userSchema = new mongoose.Schema(
             type: String,
             required: true,
             trim: true
-        }, 
-        // description: {
-        //     type: String,
-        //     trim: true,
-        //     maxLength: 250
-        // },  
+        },
         mobile: {
             type: String,
             required: true,
@@ -62,17 +58,19 @@ const userSchema = new mongoose.Schema(
         },
         location: {
             type: {
-            type: String, 
-            enum: ['Point'], 
-            required: true
+                type: String, 
+                enum: ['Point'], 
+                required: true
             },
             coordinates: {
-            type: [Number],
-            required: true
+                type: [Number],
+                required: true
             }
         }
     }
 );
 
-const User = new mongoose.model("User", userSchema);
+userSchema.index({ location: "2dsphere" });
+
+const User = mongoose.model("user", userSchema);
 module.exports = User;
