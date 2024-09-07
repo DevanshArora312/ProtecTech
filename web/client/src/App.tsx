@@ -1,11 +1,19 @@
 import './App.css';
+import { useEffect } from 'react';
 import {Routes, Route, Navigate} from 'react-router-dom';
 import { Login } from './pages/login';
 import {Dashboard} from './pages/dashboard';
 import {Alerts} from './pages/alerts';
 import { Analytics } from './pages/analytics';
 import { Connect } from './pages/connect';
+import { FullDuplexConnection, socket } from './socket';
 function App() {
+
+  useEffect(()=>{
+    if(!socket)
+      FullDuplexConnection();
+  }, [socket]);
+  console.log(socket)
   return (
     <div className="h-screen">
       <Routes>
