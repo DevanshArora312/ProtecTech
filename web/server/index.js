@@ -4,6 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const socket = require("socket.io");
 const authRoutes = require('./routes/auth.js');
+const detectRoutes = require('./routes/detect.js');
 const {dbconnect} = require("./config/database.js");
 const PoliceStation = require("./models/station.js");
 const Panic = require("./models/panic.js");
@@ -24,6 +25,7 @@ app.use(
 )
 
 app.use("/api/v1/", authRoutes);
+app.use("/api/v1/", detectRoutes);
 
 const io = socket(server, {
     cors: {
