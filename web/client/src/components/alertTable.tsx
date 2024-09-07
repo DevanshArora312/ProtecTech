@@ -17,6 +17,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import AlertModal from './alertModal';
+import ChatModal from './chats';
 
 interface Data {
   sosId: number;
@@ -129,7 +130,7 @@ export default function AlertTable() {
                 <TableCell>Username</TableCell>
                 <TableCell>Signal Source</TableCell>
                 <TableCell>Time</TableCell>
-                <TableCell align="right">Take Action</TableCell>
+                <TableCell align="right">Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -140,8 +141,15 @@ export default function AlertTable() {
                     <TableCell>{row.username}</TableCell>
                     <TableCell>{row.signalSource}</TableCell>
                     <TableCell>{row.time}</TableCell>
-                    <TableCell align="right">
-                      <AlertModal/>
+                    <TableCell>
+                      <div className='flex flex-row justify-end gap-4'>
+                        <div>
+                          <ChatModal/>
+                        </div>
+                        <div>
+                          <AlertModal/>
+                        </div>
+                      </div>
                     </TableCell>
                   </TableRow>
                 );
