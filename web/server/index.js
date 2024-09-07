@@ -39,5 +39,13 @@ server.listen(PORT, ()=>{
 
 io.on("connection", async(socket)=>{
     const socket_id = socket.id;
+
     console.log(`user connected ${socket_id}`);
+    
+    socket.on("messageByOfficer", async(data)=>{
+        const {user_id, text, longitude, latitude} = data;
+        console.log(user_id, text, longitude, latitude);
+    });
+
+    
 })

@@ -20,7 +20,7 @@ const OfficerMessagesSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    officerriginated: {
+    officerOriginated: {
         type: Boolean,
         default: false
     }
