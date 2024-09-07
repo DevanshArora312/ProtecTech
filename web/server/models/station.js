@@ -2,25 +2,28 @@ const mongoose = require("mongoose");
 
 const PoliceStationSchema = new mongoose.Schema({
     name: {
-        type: String,
+      type: String,
+      required: true,
+    },
+    location: {
+      type: {
+        type: String, 
+        enum: ['Point'], 
         required: true
-    },
-    longitude: {
-        type: Number,
+      },
+      coordinates: {
+        type: [Number],
         required: true
+      }
     },
-    latitude: {
-        type: Number,
-        required: true
-    },
-    address: {
-        type: String,
-    },
-    alerts : [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Panic'
+    address: String,
+    alerts: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Panic'
     }]
 });
-
-const PoliceStation = new mongoose.model("PiliceStation", PoliceStationSchema);
-module.exports = PoliceStation;
+  
+PoliceStationSchema.index({ location: '2dsphere' });
+  
+module.exports = mongoose.model("PoliceStation", PoliceStationSchema);
+  

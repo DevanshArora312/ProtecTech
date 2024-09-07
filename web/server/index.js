@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const socket = require("socket.io");
 const authRoutes = require('./routes/auth.js');
 const {dbconnect} = require("./config/database.js");
-
+const PoliceStation = require("./models/station.js")
 const http = require("http");
 const server = http.createServer(app);
 
@@ -47,5 +47,27 @@ io.on("connection", async(socket)=>{
         console.log(user_id, text, longitude, latitude);
     });
 
-    
+    socket.on("alertOfficers", async(data)=>{
+        const {user_id, longitude, latitude} = data; 
+        try {
+            const nearestStation = await PoliceStation.findOne({
+              location: {
+                $near: {
+                  $geometry: {
+                    type: "Point",
+                    coordinates: [longitude, latitude] 
+                  }
+                }
+              }
+            });
+        
+            if (nearestStation) {
+              console.log(`Nearest Police Station: ${nearestStation.name}`);
+            } else {
+              console.log("No police station found nearby");
+            }
+          } catch (error) {
+            console.error("Error finding nearest police station:", error);
+        }
+    });
 })

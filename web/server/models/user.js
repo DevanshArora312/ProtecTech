@@ -55,6 +55,10 @@ const userSchema = new mongoose.Schema(
         maritalStatus: {
             type: Boolean,
             default: false
+        },
+        criminalBackground: {
+            type: Boolean,
+            default: false
         }
     }
 );
