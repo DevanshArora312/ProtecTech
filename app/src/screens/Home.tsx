@@ -1,9 +1,10 @@
 import { View, Text, TouchableOpacity, SafeAreaView, Alert,Image } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import SosButton from '../components/SosButton';
 import Icon2  from 'react-native-vector-icons/MaterialIcons';
 import Contacts from '../components/Contacts';
+import AddContactModal from '../components/AddContactModal';
 
 
 const showAlert = () =>
@@ -28,6 +29,7 @@ const showAlert = () =>
     );
 
 const Home = () => {
+  const [isVisible,setVisible] = useState<boolean>(false);
   return (
     <SafeAreaView className="bg-[#F3F4F5] w-screen h-screen flex-1 gap-y-3">
         <View className="flex flex-col justify-center items-center w-full px-5 py-4 gap-2">
@@ -38,7 +40,7 @@ const Home = () => {
             <Contacts/>
         </View>
         <View className="justify-center items-center w-full px-4 pb-3">
-            <TouchableOpacity className="py-2 px-5 w-[90%]">
+            <TouchableOpacity className="py-2 px-5 w-[90%]" onPress={()=> setVisible(true)} >
                 <View className='justify-center flex-row items-center gap-2'>
                     <Icon2 name="person-add-alt-1" size={30} color={"#FE5E5C"}/>
                     <Text className="text-center text-[20px] text-[#FE5E5C] ">
@@ -48,6 +50,7 @@ const Home = () => {
             </TouchableOpacity>
         </View>
         {/* </View> */}
+        <AddContactModal isVisible={isVisible} setVisible={setVisible}/>
     </SafeAreaView>
   );
 };
