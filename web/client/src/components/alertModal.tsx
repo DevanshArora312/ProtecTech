@@ -12,6 +12,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { FullDuplexConnection, socket } from '../socket';
 import {useSelector} from 'react-redux';
 import {RootState} from '../redux/store' 
+import { useNavigate } from 'react-router-dom';
 const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
@@ -24,7 +25,25 @@ const style = {
   p: 4,
 };
 
-export default function AlertModal() {
+interface Data {
+  sosId: string,
+  firstname: string,
+  lastname: string,
+  username: string,
+  mobile: string,
+  time: string,
+  longitude: string,
+  latitude: string,
+  gender: string,
+  occupation: string,
+  maritalStatus: boolean,
+  image: string,
+  employer: string,
+  criminalBackground: boolean,
+  isEmployed: boolean,
+  bookmarkedContacts: string[]
+}
+export default function AlertModal({data} : {data: Data}) {
   const [open, setOpen] = React.useState(false);
   const [textareaValue, setTextareaValue] = React.useState(''); // State to track textarea input
   const handleOpen = () => setOpen(true);
@@ -40,18 +59,6 @@ export default function AlertModal() {
   });
   const [error, setError] = useState<string | null>(null);
 
-  const user = {
-    username: 'Mike Wheeler',
-    address: 'Hawkins, united states of america',
-    gender: 'Male',
-    contact: '+91-8368789504',
-    family_contact: [
-      '+91-8368789504',
-      '+91-8368789504',
-      '+91-8368789504',
-      '+91-8368789504',
-    ],
-  };
   const {officer} = useSelector((state : RootState)=>{
     return state.profile
   })
@@ -69,6 +76,8 @@ export default function AlertModal() {
         longitude: 105
     })
   }
+  
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -88,16 +97,23 @@ export default function AlertModal() {
                 <Typography>User Details</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <div className="text-lg text-slate-800 font-bold">{user?.username}</div>
-                <div className="text-sm text-slate-800">{user?.address}</div>
-                <div className="text-xs text-slate-600">{user?.gender}</div>
-                <div className="font-bold text-slate-900">{user?.contact}</div>
-                <div>
-                  {user?.family_contact?.map((con, index) => (
-                    <div key={index} className="text-slate-600 text-sm">
-                      {con}
-                    </div>
-                  ))}
+                <div className="text-lg text-slate-800 font-bold">{data.firstname + data.lastname}</div>
+                <div className="text-sm text-slate-800">{data.occupation}</div>
+                <div className="text-xs text-slate-600">{data.gender}</div>
+                <div className="font-bold text-slate-900">{data.mobile}</div>
+                <div className='pt-4 text-xs'>
+                  <Accordion variant='outlined'>
+                    <AccordionSummary expandIcon={<ArrowDownwardIcon />}>
+                      <Typography>Family Contacts</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      {data.bookmarkedContacts.map((con, index) => (
+                        <div key={index} className="text-slate-600 text-sm">
+                          {con}
+                        </div>
+                      ))}
+                    </AccordionDetails>
+                  </Accordion>
                 </div>
               </AccordionDetails>
             </Accordion>
@@ -122,10 +138,16 @@ export default function AlertModal() {
             <Button variant="contained" sx={{ bgcolor: blueGrey[700] }}>
               Call
             </Button>
-            <Button variant="contained" sx={{ bgcolor: blueGrey[800] }}>
+            <Button variant="contained" sx={{ bgcolor: blueGrey[800] }} onClick={()=>{
+              navigate(`/dashboard/trace/${data.latitude}/${data.longitude}`)
+            }}>
               Trace
             </Button>
-            <Button variant="contained" sx={{ bgcolor: blueGrey[900] }}>
+            <Button variant="contained" sx={{ bgcolor: blueGrey[900] }}
+              onClick={()=>{
+                navigate(`/dashboard/detect/${data.latitude}/${data.longitude}`)
+              }}
+            >
               Detect Threat
             </Button>
           </Box>

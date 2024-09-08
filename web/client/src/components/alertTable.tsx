@@ -224,7 +224,7 @@ export default function AlertTable() {
                           <ChatModal/>
                         </div>
                         <div>
-                          <AlertModal/>
+                          <AlertModal data={row}/>
                         </div>
                       </div>
                     </TableCell>
