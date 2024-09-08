@@ -4,15 +4,16 @@ import { useDispatch,useSelector } from 'react-redux';
 import { socket,connectSocket } from '../utils/socket';
 import { sendLocation } from '../utils/locationUtils';
 import { setActive } from '../redux/slices/active';
+import { requestLocationPermission, requestSmsPermission } from '../utils/getPermissions';
 
 const Startup = ({navigation} : {navigation : any}) => {
     const dispatch = useDispatch();
     const activeState = useSelector((state : any) => state.active)
     const checkPermissions = async () => {
-        // return new Promise((res,rej)=>console.log(res))
+        await requestLocationPermission();
+        await requestSmsPermission();
     }
     const checkLoggedIn = () => {
-        
         try{
             const isLogged = useSelector((state : any) => state.auth.userId);
             if(!isLogged || isLogged == null) return false;
@@ -28,7 +29,6 @@ const Startup = ({navigation} : {navigation : any}) => {
         }
     }
     useEffect(()=>{
-        
         checkPermissions()
         .then(_ => {
             const res = checkLoggedIn();

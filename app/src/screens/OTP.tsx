@@ -7,26 +7,29 @@ import { sendLocation } from '../utils/locationUtils'
 
 const OTP = ({navigation} : {navigation : any}) => {
     const dispatch = useDispatch();
-    const setupSocket = () => {
-        if(!socket){
-            const userId = useSelector((state : any) => state.auth.userId);
-            connectSocket(userId);
-        }
-    }
+    
     const handleOTP = async () => {
-
         //implement endpoint
 
-        navigation.pop();
+        const responsePayload = { data : "...smth" , userId : "" }
         if('otpCorrect'){
-            setupSocket();
-            if(socket){
-                const longInterval = setInterval(()=>{
-                    sendLocation();
-                },60*60*1000);
-                dispatch(setActive({name:"longInterval",intv : longInterval}));
+            try{
+                if(!socket){
+                    connectSocket(responsePayload.userId);
+                }
+                if(socket){
+                    const longInterval = setInterval(()=>{
+                        sendLocation();
+                    },60*60*1000);
+                    dispatch(setActive({name:"longInterval",intv : longInterval}));
+                }
+                navigation.pop();
+                navigation.replace("App");
             }
-            navigation.replace("App");
+            catch(err){
+                console.log(err);
+                //show error toast
+            }
         }
         else{
             // show error message

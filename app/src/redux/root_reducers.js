@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import listReducer from './slices/list';
+import userReducer from './slices/user';
 import activeReducer from './slices/active';
 import chatReducer from './slices/chat';
 import authReducer from './slices/auth';
@@ -19,7 +19,7 @@ const rootPersistConfig = {
 };
 
 const rootReducer = combineReducers({
-  list : listReducer,
+  user : userReducer,
   auth: authReducer,
   chat: chatReducer,
   active : activeReducer,
