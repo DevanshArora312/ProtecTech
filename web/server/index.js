@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const socket = require("socket.io");
 const authRoutes = require('./routes/auth.js');
 const detectRoutes = require('./routes/detect.js');
+const alertRoutes = require('./routes/alert.js');
 const {dbconnect} = require("./config/database.js");
 const PoliceStation = require("./models/station.js");
 const Panic = require("./models/panic.js");
@@ -27,6 +28,7 @@ app.use(
 
 app.use("/api/v1/", authRoutes);
 app.use("/api/v1/", detectRoutes);
+app.use("/api/v1/", alertRoutes);
 
 const io = socket(server, {
     cors: {
@@ -100,13 +102,4 @@ io.on("connection", async(socket)=>{
             console.error("Error finding nearest police station:", error);
         }
     });
-    socket.on('getAlert', async(data)=>{
-        const {station_id} = data;
-        try{
-            const stationData = await station.findOne({id:station_id});
-            io.to(stationData.socket_id).emit('updateAlerts', stationData.alerts);
-        } catch(err){
-            console.log(err);
-        }
-    })
 })

@@ -26,7 +26,7 @@ const loadFromLocalStorage = () => {
 const initialState : {token : string, officer: officer | null} = loadFromLocalStorage(); 
 
 const profileSlice = createSlice({
-    name: 'auth',
+    name: 'profile',
     initialState,
     reducers: {
         login: (state, action)=>{

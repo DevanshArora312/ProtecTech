@@ -10,12 +10,22 @@ import { FullDuplexConnection, socket } from './socket';
 import Detect from './pages/detect';
 import Trace from './pages/trace';
 import ProtectedRoute from './components/protect';
+import {useSelector} from 'react-redux';
+import {RootState} from './redux/store' 
 function App() {
+
+  const {officer} = useSelector((state : RootState)=>{
+    return state.profile
+  })
+
   useEffect(()=>{
-    if(!socket)
-      FullDuplexConnection('66dc1dc80eb2e01f712ed18a');
+    if(!socket){
+      if(officer){
+        FullDuplexConnection(officer.thana_id);
+      }
+    }
   }, [socket]);
-  console.log(socket)
+
   return (
     <div className="h-screen">
       <Routes>

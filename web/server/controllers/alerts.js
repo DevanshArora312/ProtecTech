@@ -1,10 +1,24 @@
 const station = require("../models/station");
-exports.getAlerts = async(data)=>{
-    const {station_id} = data;
+exports.getAlerts = async(req, res)=>{
+    const {station_id} = req.body;
+    
+    if(!station_id) return res.status(400).json({
+        success: false,
+        message: "Station ID is required"
+    })
+
     try{
-        const stationData = await station.findOne({id:station_id});
-        return stationData.alerts;
+        const stationData = await station.findById(station_id).populate('alerts').exec();
+
+        return res.status(200).json({
+            success: true,
+            alerts: stationData.alerts
+        })
     } catch(err){
         console.log(err);
+        return res.status(500).json({
+            success: false,
+            message: 'alerts could not fetched'
+        })
     }
 }

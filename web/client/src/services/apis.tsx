@@ -6,3 +6,6 @@ export const AUTH = {
 export const DETECT = {
     login: `${BASE_URL}/detect`,
 }
+export const ALERT = {
+    alert: `${BASE_URL}/alerts`,
+}

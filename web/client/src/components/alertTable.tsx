@@ -19,6 +19,10 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import AlertModal from './alertModal';
 import ChatModal from './chats';
 import { FullDuplexConnection, socket } from '../socket';
+import {useSelector} from 'react-redux';
+import {RootState} from '../redux/store';
+import { apiConnector } from '../services/apiConnector';
+import { ALERT } from '../services/apis';
 interface Data {
   sosId: number;
   username: string;
@@ -54,15 +58,23 @@ const rows = [
 export default function AlertTable() {
   const [order, setOrder] = React.useState<Order>('asc');
   const [orderBy, setOrderBy] = React.useState<keyof Data>('time');
-  const [alerts, setAlerts] = React.useState([]);
+  const [alerts, setAlerts] = React.useState<Data[]>([]);
 
   
+  const {officer} = useSelector((state : RootState)=>{
+    return state.profile
+  })
 
   React.useEffect(()=>{
-    if(socket){
-      socket.emit('getAlerts', {station_id: '66dc1dc80eb2e01f712ed18a'});
-    }
-  }, [socket])
+    (async()=>{
+      if(officer){
+        console.log("pls wait....");
+        const response = await apiConnector({method: "POST", url : ALERT.alert, bodyData: {station_id: officer.thana_id}});
+        console.log(response);
+      }
+
+    })();
+  }, [socket, officer])
 
 
   const [page, setPage] = React.useState(0);

@@ -10,6 +10,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { FullDuplexConnection, socket } from '../socket';
+import {useSelector} from 'react-redux';
+import {RootState} from '../redux/store' 
 const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
@@ -50,9 +52,14 @@ export default function AlertModal() {
       '+91-8368789504',
     ],
   };
+  const {officer} = useSelector((state : RootState)=>{
+    return state.profile
+  })
   const submitHandler = async()=>{
     if(!socket){
-        FullDuplexConnection('66dc1dc80eb2e01f712ed18a');
+      if(officer){
+        FullDuplexConnection(officer.thana_id);
+      }
     }
     console.log("emitting...")
     socket.emit("messageByOfficer", {
