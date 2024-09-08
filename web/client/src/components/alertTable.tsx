@@ -23,6 +23,7 @@ import {useSelector} from 'react-redux';
 import {RootState} from '../redux/store';
 import { apiConnector } from '../services/apiConnector';
 import { ALERT } from '../services/apis';
+
 interface Data {
   sosId: string,
   firstname: string,
@@ -39,6 +40,7 @@ interface Data {
   employer: string,
   criminalBackground: boolean,
   isEmployed: boolean,
+  userid: string,
   bookmarkedContacts: string[]
 }
 
@@ -58,7 +60,8 @@ function createData(
   employer: string,
   criminalBackground: boolean,
   isEmployed: boolean,
-  bookmarkedContacts: string[]
+  bookmarkedContacts: string[],
+  userid: string
 ): Data {
   return {
     sosId,
@@ -76,20 +79,19 @@ function createData(
     employer,
     criminalBackground,
     isEmployed,
-    bookmarkedContacts
+    bookmarkedContacts,
+    userid
   };
 }
-
 
 export default function AlertTable() {
   const [order, setOrder] = React.useState<Order>('asc');
   const [orderBy, setOrderBy] = React.useState<keyof Data>('time');
   const [alerts, setAlerts] = React.useState<Data[]>([]);
-
   
   const {officer} = useSelector((state : RootState)=>{
     return state.profile
-  })
+  });
 
   React.useEffect(()=>{
     (async()=>{
@@ -112,7 +114,8 @@ export default function AlertTable() {
             mobile: string,
             criminalBackground: boolean,
             isEmployed: boolean,
-            bookmarkedContact: string[]
+            bookmarkedContact: string[],
+            userid: string
           }
           _id: string
         })=>{
@@ -132,14 +135,14 @@ export default function AlertTable() {
             alert.user.employer,
             alert.user.criminalBackground,
             alert.user.isEmployed,
-            alert.user.bookmarkedContact
+            alert.user.bookmarkedContact,
+            alert.user.userid
           )])
-        })
+        });
       }
 
     })();
-  }, [socket, officer])
-
+  }, [socket, officer]);
 
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -210,9 +213,9 @@ export default function AlertTable() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {alerts.map((row, index) => {
-                console.log(row);
-                return (
+              {alerts
+                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                .map((row) => (
                   <TableRow hover key={row.sosId}>
                     <TableCell>{row.sosId}</TableCell>
                     <TableCell>{row.username}</TableCell>
@@ -221,7 +224,7 @@ export default function AlertTable() {
                     <TableCell>
                       <div className='flex flex-row justify-end gap-4'>
                         <div>
-                          <ChatModal/>
+                          <ChatModal user_id={row.userid}/>
                         </div>
                         <div>
                           <AlertModal data={row}/>
@@ -229,8 +232,7 @@ export default function AlertTable() {
                       </div>
                     </TableCell>
                   </TableRow>
-                );
-              })}
+              ))}
             </TableBody>
           </Table>
         </TableContainer>
