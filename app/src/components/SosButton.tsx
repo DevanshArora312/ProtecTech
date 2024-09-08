@@ -1,12 +1,23 @@
-import React from 'react';
-import { Text,View, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useEffect } from 'react';
+import { Text,View, StyleSheet, TouchableOpacity, PermissionsAndroid } from 'react-native';
 import LottieView from 'lottie-react-native';
+import { socket } from '../utils/socket';
+import {sendLocation} from "../utils/locationUtils"
+
+
 
 const SosButton = () => {
+  useEffect(()=>{
+    if(socket){
+      socket.on("track",()=>{
+        sendLocation();
+      })
+    }
+  },[])
   return (
       <TouchableOpacity 
         style={styles.container}
-        onPress={()=>{console.log("hehe")}}
+        onPress={sendLocation}
       >      
         <LottieView
             source={require('../../assets/blob.json')} 

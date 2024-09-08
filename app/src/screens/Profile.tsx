@@ -16,7 +16,7 @@ const Profile = () => {
             <View className='w-full flex-row gap-x-4 justify-around items-center my-4'>
                 <View className='flex-row gap-x-2 items-center text-black '>
                     <Icon name="face-woman-profile" size={30} color={"#FE5E5C"} />
-                    <Text className='text-[22px]'>Vasiu</Text>
+                    <Text className='text-[22px]'>Jane Doe</Text>
                 </View>
                 <View className='flex-row gap-x-2 items-center text-black '>
                     <Icon name="calendar-month" size={30} color={"#FE5E5C"} />
@@ -31,7 +31,7 @@ const Profile = () => {
                     </View>
                     <View className='flex-row gap-x-2 items-center text-black '>
                         <Icon name="phone-in-talk" size={30} color={"#FE5E5C"} />
-                        <Text className='text-[22px]'>+91 9013474563</Text>
+                        <Text className='text-[22px]'>+91 00000053</Text>
                     </View>
                 </View>
                 <Text className="text-black text-[20px] px-2 mt-2 mx-2">Your favourite contacts are : </Text>
