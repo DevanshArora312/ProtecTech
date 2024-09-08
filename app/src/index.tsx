@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 // import { Image, Text, View } from 'react-native';
 import Home from './screens/Home';
@@ -9,13 +9,20 @@ import { Button, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Panic from './screens/Panic';
 import ThreatDetect from './screens/ThreatDetect';
-import { TabIconPropType } from './Types';
+import { TabIconPropType } from './utils/Types';
 import Chat from './screens/Chat';
 import Header from './components/Header';
 import Profile from './screens/Profile';
+import {store} from "./redux/store.js";
+import {Provider as ReduxProvider} from 'react-redux';
+import Startup from './screens/Startup.tsx';
+import Login from './screens/Login.tsx';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import OTP from './screens/OTP.tsx';
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
 const TabIcon = ({ icon, color, name, focused } : TabIconPropType ) => {
   if(!focused) icon = icon+'-outline';
@@ -86,10 +93,9 @@ const TabRoot = () => {
   )
 }
 
-const Index = () => {
-    return (
-      <NavigationContainer>
-        <Drawer.Navigator
+const DrawerNavigator = () => {
+  return (
+    <Drawer.Navigator
           initialRouteName="Home"
           screenOptions={
             {
@@ -109,7 +115,35 @@ const Index = () => {
           <Drawer.Screen name="ThreatDetect" component={ThreatDetect}  />
           <Drawer.Screen name="Profile" component={Profile}  /> 
         </Drawer.Navigator>
-      </NavigationContainer>
+  )
+}
+
+const Index = () => {
+    return (
+      <ReduxProvider store={store}>
+      <GestureHandlerRootView style={{flex:1}}>
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+              name="Startup"
+              component={Startup}
+            />
+            <Stack.Screen
+              name="Login"
+              component={Login}
+            />
+            <Stack.Screen
+              name="OTP"
+              component={OTP}
+            />
+            <Stack.Screen
+              name="App"
+              component={DrawerNavigator}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </GestureHandlerRootView>
+      </ReduxProvider>
     );
   };
 export default Index;

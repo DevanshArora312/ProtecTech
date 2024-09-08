@@ -50,7 +50,6 @@ const Chat = () => {
                 keyExtractor={(item) => (item.id.toString())}
             />
             
-            
         }
         <View className='flex-row items-center justify-between p'>
             <TextInput className='rounded-full p-4 h-18 w-[85%] bg-white border-[1px] border-black' placeholder='Enter a message'/>
