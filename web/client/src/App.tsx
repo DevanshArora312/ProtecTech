@@ -9,6 +9,7 @@ import { Connect } from './pages/connect';
 import { FullDuplexConnection, socket } from './socket';
 import Detect from './pages/detect';
 import Trace from './pages/trace';
+import ProtectedRoute from './components/protect';
 function App() {
   useEffect(()=>{
     if(!socket)
@@ -20,7 +21,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<Login/>}/>
-        <Route path="/dashboard" element={<Dashboard/>}>
+        <Route path="/dashboard" element={
+          <ProtectedRoute>
+            <Dashboard/>
+          </ProtectedRoute>
+        }>
           <Route path="/dashboard" element={<Navigate to={"/dashboard/alerts"} replace/>}/>
           <Route path="/dashboard/alerts" element={<Alerts/>}/>
           <Route path="/dashboard/detect/:latitude/:longitude" element={<Detect/>}/>
