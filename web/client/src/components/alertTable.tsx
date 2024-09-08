@@ -18,7 +18,7 @@ import Switch from '@mui/material/Switch';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import AlertModal from './alertModal';
 import ChatModal from './chats';
-
+import { FullDuplexConnection, socket } from '../socket';
 interface Data {
   sosId: number;
   username: string;
@@ -54,6 +54,17 @@ const rows = [
 export default function AlertTable() {
   const [order, setOrder] = React.useState<Order>('asc');
   const [orderBy, setOrderBy] = React.useState<keyof Data>('time');
+  const [alerts, setAlerts] = React.useState([]);
+
+  
+
+  React.useEffect(()=>{
+    if(socket){
+      socket.emit('getAlerts', {station_id: '66dc1dc80eb2e01f712ed18a'});
+    }
+  }, [socket])
+
+
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);

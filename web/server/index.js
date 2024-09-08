@@ -11,7 +11,7 @@ const Panic = require("./models/panic.js");
 const http = require("http");
 const server = http.createServer(app);
 const cron = require('node-cron');
-
+const {getAlerts} = require("./controllers/alerts.js");
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
@@ -100,5 +100,13 @@ io.on("connection", async(socket)=>{
             console.error("Error finding nearest police station:", error);
         }
     });
-    
+    socket.on('getAlert', async(data)=>{
+        const {station_id} = data;
+        try{
+            const stationData = await station.findOne({id:station_id});
+            io.to(stationData.socket_id).emit('updateAlerts', stationData.alerts);
+        } catch(err){
+            console.log(err);
+        }
+    })
 })
