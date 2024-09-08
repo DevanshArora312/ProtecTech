@@ -3,19 +3,24 @@ import { TextField, Card, CardHeader, CardContent, CardActions, Avatar, Typograp
 import { blueGrey } from '@mui/material/colors';
 import { AUTH } from '../services/apis';
 import { apiConnector } from '../services/apiConnector';
+import {useNavigate} from 'react-router-dom'
 export default function LoginCard() {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
 
   const submitHandler = async()=>{
     if(!password || !username) return;
     try{
       console.log("pls wait");
       const response = await apiConnector({method: "POST", url : AUTH.login, bodyData: {username, password}});
-      console.log(response);
+      localStorage.setItem("token", response.token);
+      localStorage.setItem("officer", JSON.stringify(response.officer));
+      navigate('/dashboard')
     } catch(err){
-
+      console.log(err);
     }
   }
   const handleUsernameChange = (event : ChangeEvent<HTMLInputElement>) => {
