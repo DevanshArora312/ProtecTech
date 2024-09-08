@@ -8,7 +8,15 @@ exports.getAlerts = async(req, res)=>{
     })
 
     try{
-        const stationData = await station.findById(station_id).populate('alerts').exec();
+        const stationData = await station.findById(station_id)
+        .populate({
+            path: 'alerts',
+            populate: {
+                path: 'user',
+                model: 'user'
+            }
+        })
+        .exec();
 
         return res.status(200).json({
             success: true,
