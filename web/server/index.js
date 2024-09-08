@@ -6,6 +6,7 @@ const socket = require("socket.io");
 const authRoutes = require('./routes/auth.js');
 const detectRoutes = require('./routes/detect.js');
 const alertRoutes = require('./routes/alert.js');
+const messageRoutes = require('./routes/messages.js');
 const {dbconnect} = require("./config/database.js");
 const PoliceStation = require("./models/station.js");
 const Panic = require("./models/panic.js");
@@ -29,6 +30,7 @@ app.use(
 app.use("/api/v1/", authRoutes);
 app.use("/api/v1/", detectRoutes);
 app.use("/api/v1/", alertRoutes);
+app.use("/api/v1/", messageRoutes);
 
 const io = socket(server, {
     cors: {
@@ -102,4 +104,31 @@ io.on("connection", async(socket)=>{
             console.error("Error finding nearest police station:", error);
         }
     });
+    socket.on("messageOfficers", async(data)=>{
+        const {user_id, longitude, latitude, text} = data;
+
+        const newMessage = await OfficerMessages.create({
+            user: user_id, 
+            text: text,
+            longitude: longitude,
+            latitude: latitude,
+            officerOriginated: false, 
+        });
+
+        io.broadcast.emit("newMessage", newMessage);
+    });
+    socket.on("messageByOfficers", async(data)=>{
+        const {user_id, longitude, latitude, text} = data;
+
+        const newMessage = await OfficerMessages.create({
+            user: user_id, 
+            text: text,
+            longitude: longitude,
+            latitude: latitude,
+            officerOriginated: true, 
+        });
+
+        // find socket id of the user and emit an event to it.
+    });
+
 })
