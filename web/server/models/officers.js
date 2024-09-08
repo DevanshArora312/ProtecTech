@@ -47,7 +47,8 @@ const officerSchema = new mongoose.Schema({
         required: true
     },
     thana_id: {
-        type: Number,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Station',
         required: true
     }
 });

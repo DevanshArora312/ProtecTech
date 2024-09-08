@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 const Officer = require("../models/officers.js");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-
 exports.signup = async (req, res) => {
 	try {
 		const {
@@ -24,52 +23,35 @@ exports.signup = async (req, res) => {
             email
         });
 
-        if(email){
+        if(existingOfficer){
             return res.status(404).json({
                 success: false,
                 message: 'Something went wrong'
             })
         }
 
-		const response = await OTP.find({ email }).sort({ createdAt: -1 }).limit(1);
-
-		if (response.length === 0) {
-			return res.status(400).json({
-				success: false,
-				message: "The OTP is not valid",
-			});
-		} else if (otp !== response[0].otp) {
-			return res.status(400).json({
-				success: false,
-				message: "Incorrect otp",
-			});
-		}
+		
 		const hashedPassword = await bcrypt.hash(password, 10);
-		let approved = "";
-		approved === "Instructor" ? (approved = false) : (approved = true);
-		const profileDetails = await Profile.create({
-			gender: null,
-			dateOfBirth: null,
-			about: null,
-			contactNumber: null,
-		});
-		const user = await User.create({
+
+		const officer = await Officer.create({
 			firstname,
 			lastname,
 			username,
 			email,
-			contactNumber,
+			mobile,
 			password: hashedPassword,
-			accountType: accountType,
-			approved: approved,
-			additionalDetails: profileDetails._id,
-			image: `https://api.dicebear.com/5.x/initials/svg?seed=${firstname} ${lastname}`,
+			username,
+			stars,
+			role,
+			department,
+			thana_id
 		});
+
 		return res.status(200).json({
 			success: true,
-			user,
 			message: "User registered successfully",
 		});
+
 	} catch (error) {
 		console.error(error);
 		return res.status(500).json({
@@ -97,12 +79,13 @@ exports.login = async(req, res)=>{
 		}
 		if(await bcrypt.compare(password, officer.password)){
 			const token = jwt.sign(
-				{email: user.email},
+				{email: officer.email},
 				process.env.JWT_SECRET
 			)
 			return res.status(200).json({
 				success: true,
 				token,
+				officer: officer,
 				message: "Officer logged in successfully"
 			})
 		}
