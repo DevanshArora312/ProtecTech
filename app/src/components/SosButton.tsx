@@ -1,51 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Text,View, StyleSheet, TouchableOpacity, PermissionsAndroid } from 'react-native';
 import LottieView from 'lottie-react-native';
-import GeoLocation from "react-native-geolocation-service";
+import { socket } from '../utils/socket';
+import {sendLocation} from "../utils/locationUtils"
 
 
-const getLocation = async () => {
-  try {
-    const granted = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-      {
-        title: 'Geolocation Permission',
-        message: 'Can we access your location?',
-        buttonNeutral: 'Ask Me Later',
-        buttonNegative: 'Cancel',
-        buttonPositive: 'OK',
-      },
-    );
-    console.log('granted', granted);
-    if (granted === 'granted') {
-      GeoLocation.getCurrentPosition(
-        position => {
-          console.log(position);
-          return position;
-        },
-        error => {
-          console.log(error.code, error.message);
-          return null;
-        },
-        {enableHighAccuracy: true, timeout: 15000, maximumAge: 10000},
-      );
-    } else {
-      console.log('You cannot use Geolocation');
-      return null;
-    }
-  } catch (err) {
-    console.log(err);
-    return null;
-  }
-}
-
-const sendLocation = async () => {
-  const posn = await getLocation();
-  if(!posn) return;
-  
-}
 
 const SosButton = () => {
+  useEffect(()=>{
+    if(socket){
+      socket.on("track",()=>{
+        sendLocation();
+      })
+    }
+  },[])
   return (
       <TouchableOpacity 
         style={styles.container}

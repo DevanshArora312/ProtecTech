@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    active : null
+    active : {}
 }
 
 const slice = createSlice({
@@ -9,7 +9,7 @@ const slice = createSlice({
     initialState,
     reducers : {
         setActive : (state,action) => {
-            state.active = action.payload
+            state.active[action.payload.name] = action.payload.intv
         },
         
         
