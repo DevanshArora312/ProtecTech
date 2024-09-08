@@ -9,6 +9,7 @@ import MyBarChart from '../components/BarChart';
 import ScatterPlot from '../components/ScatterPlot';
 import Line from '../components/Line';
 import SimpleAreaChart from '../components/areaChart';
+import HorizontalBars from '../components/horizontalBars';
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -45,6 +46,12 @@ export function Analytics() {
               item.type === 'gauge chart' && 
               <div className='flex flex-col items-center justify-center pb-4 font-bold'>
                   <GaugeChart value={item?.data}/>
+              </div>
+            }
+            {
+              item.type === 'Horizontal Bars' && 
+              <div className='flex flex-col items-center justify-center pb-4 font-bold'>
+                  <HorizontalBars/>
               </div>
             }
             {
@@ -141,7 +148,7 @@ const itemData = [
   },
   {
     title: 'Planned',
-    type: 'unknown'
+    type: 'Horizontal Bars'
   },
   {
     title: 'Planned',
