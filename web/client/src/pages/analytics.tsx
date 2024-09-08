@@ -8,7 +8,7 @@ import GaugeChart from '../components/GaugeChart';
 import MyBarChart from '../components/BarChart';
 import ScatterPlot from '../components/ScatterPlot';
 import Line from '../components/Line';
-
+import SimpleAreaChart from '../components/areaChart';
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -33,6 +33,12 @@ export function Analytics() {
                   <div className='text-slate-400'>
                       <EngineeringIcon sx={{ fontSize: 80}}/>
                   </div>
+              </div>
+            }
+            {
+              item.type === 'Area' && 
+              <div className='flex flex-col items-center justify-center pb-4 font-bold'>
+                  <SimpleAreaChart />
               </div>
             }
             {
@@ -131,7 +137,7 @@ const itemData = [
   },
   {
     title: 'Planned',
-    type: 'unknown'
+    type: 'Area'
   },
   {
     title: 'Planned',
