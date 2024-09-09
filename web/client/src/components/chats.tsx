@@ -43,7 +43,7 @@ const ChatModal = ({ user_id }: { user_id: string }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  
+  console.log(chatMessages);
   useEffect(() => {
     if (open) {
       fetchChatMessages();
@@ -53,9 +53,8 @@ const ChatModal = ({ user_id }: { user_id: string }) => {
   const fetchChatMessages = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`/api/messages/${user_id}`); 
+      const response = await axios.get(`http://localhost:4000/api/v1/messages/${user_id}`); 
       const messages = response.data.data; 
-
       setChatMessages(messages);
       setLoading(false);
     } catch (error) {
