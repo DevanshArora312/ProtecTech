@@ -115,7 +115,7 @@ export default function AlertTable() {
             criminalBackground: boolean,
             isEmployed: boolean,
             bookmarkedContact: string[],
-            userid: string
+            _id: string
           }
           _id: string
         })=>{
@@ -136,7 +136,7 @@ export default function AlertTable() {
             alert.user.criminalBackground,
             alert.user.isEmployed,
             alert.user.bookmarkedContact,
-            alert.user.userid
+            alert.user._id
           )])
         });
       }

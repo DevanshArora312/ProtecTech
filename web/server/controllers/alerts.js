@@ -13,7 +13,7 @@ exports.getAlerts = async(req, res)=>{
             path: 'alerts',
             populate: {
                 path: 'user',
-                model: 'user'
+                model: 'User'
             }
         })
         .exec();
