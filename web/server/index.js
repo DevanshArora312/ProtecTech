@@ -9,6 +9,8 @@ const alertRoutes = require('./routes/alert.js');
 const messageRoutes = require('./routes/messages.js');
 const {dbconnect} = require("./config/database.js");
 const PoliceStation = require("./models/station.js");
+const Message = require("./models/messages.js");
+const user = require("./models/user.js");
 const Panic = require("./models/panic.js");
 const http = require("http");
 const server = http.createServer(app);
@@ -63,11 +65,6 @@ io.on("connection", async(socket)=>{
         io.emit('locationRequest', { message: 'location update' });
     })
 
-    socket.on("messageByOfficer", async(data)=>{
-        const {user_id, text, longitude, latitude} = data;
-        console.log(user_id, text, longitude, latitude);
-    });
-
     socket.on("alertOfficers", async(data)=>{
         const {user_id, longitude, latitude} = data; 
         try {
@@ -120,13 +117,21 @@ io.on("connection", async(socket)=>{
     socket.on("messageByOfficers", async(data)=>{
         const {user_id, longitude, latitude, text} = data;
 
-        const newMessage = await OfficerMessages.create({
+        const newMessage = await Message.create({
             user: user_id, 
             text: text,
             longitude: longitude,
             latitude: latitude,
             officerOriginated: true, 
         });
+
+        console.log(newMessage);
+        
+        const _user = await user.findById(user_id);
+        _user.messages.push(newMessage._id); 
+        await _user.save();
+        
+        io.emit("newMessage", newMessage);
 
         // find socket id of the user and emit an event to it.
     });

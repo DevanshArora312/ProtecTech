@@ -43,7 +43,7 @@ interface Data {
   criminalBackground: boolean,
   isEmployed: boolean,
   userid: string,
-  bookmarkedContacts: string[]
+  bookmarkedContacts: string[],
 }
 
 function createData(

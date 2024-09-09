@@ -41,6 +41,7 @@ interface Data {
   employer: string,
   criminalBackground: boolean,
   isEmployed: boolean,
+  userid: string,
   bookmarkedContacts: string[]
 }
 export default function AlertModal({data} : {data: Data}) {
@@ -48,7 +49,7 @@ export default function AlertModal({data} : {data: Data}) {
   const [textareaValue, setTextareaValue] = React.useState(''); // State to track textarea input
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
+  
   const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setTextareaValue(e.target.value);
   };
@@ -68,13 +69,13 @@ export default function AlertModal({data} : {data: Data}) {
         FullDuplexConnection(officer.thana_id);
       }
     }
-    console.log("emitting...")
-    socket.emit("messageByOfficer", {
-        user_id: "12345", 
-        text: "hello, how are you?",
-        latitude: -50,
-        longitude: 105
-    })
+    socket.emit("messageByOfficers", {
+        user_id: data.userid, 
+        text: textareaValue,
+        latitude: data.latitude,
+        longitude: data.longitude
+    });
+    setTextareaValue("");
   }
   
   const navigate = useNavigate();
