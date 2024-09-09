@@ -66,7 +66,13 @@ const userSchema = new mongoose.Schema(
                 type: [Number],
                 required: true
             }
-        }
+        },
+        messages: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Messages'
+            }
+        ]
     }
 );
 

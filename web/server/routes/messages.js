@@ -6,21 +6,20 @@ const mongoose = require("mongoose");
 router.get('/messages/:userId', async (req, res) => {
     try {
         const { userId } = req.params;
-        const _id = (await User.findById(userId))._id;
-        const messages = await Messages.find({}).filter()
+        const user = await User.findById(userId).populate("messages").exec();
         
-        console.log(_id,messages);
+        console.log(user);
 
-        if (!messages || messages.length === 0) {
+        if (!user) {
             return res.status(404).json({
                 success: false,
-                message: 'No messages found for this user',
+                message: "something went wrong",
             });
         }
 
         return res.status(200).json({
             success: true,
-            data: messages,
+            data: user.messages,
         });
     } catch (error) {
         console.error(error);
