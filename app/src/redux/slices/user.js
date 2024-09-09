@@ -6,6 +6,7 @@ const initialState = {
     dob : "",
     gender : "",
     phone : "",
+    location : {},
     contacts : []
 };
 

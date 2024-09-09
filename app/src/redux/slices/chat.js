@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    chat : {}
+    chat : []
 }
 
 const slice = createSlice({
@@ -12,7 +12,7 @@ const slice = createSlice({
             state.chat = action.payload
         },
         pushChat : (state,action) => {
-            state.chat.messages.splice(0,0,action.payload)
+            state.chat.push(action.payload)
         }
         
     }
