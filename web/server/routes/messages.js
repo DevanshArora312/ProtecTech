@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const Messages = require('../models/messages'); 
+const User = require('../models/user'); 
 const mongoose = require("mongoose");
 router.get('/messages/:userId', async (req, res) => {
     try {
         const { userId } = req.params;
-
-        const messages = await Messages.find({ user: new mongoose.Types.ObjectId(userId)})
+        const _id = (await User.findById(userId))._id;
+        const messages = await Messages.find({}).filter()
         
-        console.log(messages);
+        console.log(_id,messages);
 
         if (!messages || messages.length === 0) {
             return res.status(404).json({
