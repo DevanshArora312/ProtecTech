@@ -1,18 +1,20 @@
 const mongoose = require("mongoose");
 
-const panicSchema = new mongoose.model.Schema({
-    panicId: {
-        type: Number,
-        required: true,
-    },
+const panicSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: true
     },
-    location: {
-        type: String,
+    longitude: {
+        type: Number,
+        required: true
+    },
+    latitude: {
+        type: Number,
+        required: true
     }
 });
 
-module.exports = mongoose.model("panic", panicSchema);
+const Panic = new mongoose.model("Panic", panicSchema);
+module.exports = Panic;

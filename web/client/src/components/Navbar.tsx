@@ -13,7 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { blueGrey } from '@mui/material/colors';
 import { useNavigate } from 'react-router-dom';
-const pages = ['alerts', 'analytics', 'connect'];
+
+const pages = ['alerts', 'ai alerts', 'analytics', 'connect'];
 
 function Navbar() {
   const navigate = useNavigate(); 

@@ -17,42 +17,133 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import AlertModal from './alertModal';
+import ChatModal from './chats';
+import { FullDuplexConnection, socket } from '../socket';
+import {useSelector} from 'react-redux';
+import {RootState} from '../redux/store';
+import { apiConnector } from '../services/apiConnector';
+import { ALERT } from '../services/apis';
 
 interface Data {
-  sosId: number;
-  username: string;
-  signalSource: string;
-  time: string;
+  sosId: string,
+  firstname: string,
+  lastname: string,
+  username: string,
+  mobile: string,
+  time: string,
+  longitude: string,
+  latitude: string,
+  gender: string,
+  occupation: string,
+  maritalStatus: boolean,
+  image: string,
+  employer: string,
+  criminalBackground: boolean,
+  isEmployed: boolean,
+  userid: string,
+  bookmarkedContacts: string[]
 }
 
 function createData(
-  sosId: number,
+  sosId: string,
+  firstname: string,
+  lastname: string,
   username: string,
-  signalSource: string,
+  mobile: string,
   time: string,
+  longitude: string,
+  latitude: string,
+  gender: string,
+  occupation: string,
+  maritalStatus: boolean,
+  image: string,
+  employer: string,
+  criminalBackground: boolean,
+  isEmployed: boolean,
+  bookmarkedContacts: string[],
+  userid: string
 ): Data {
   return {
     sosId,
     username,
-    signalSource,
+    mobile,
     time,
+    firstname,
+    lastname,
+    latitude,
+    longitude,
+    gender,
+    occupation,
+    maritalStatus,
+    image,
+    employer,
+    criminalBackground,
+    isEmployed,
+    bookmarkedContacts,
+    userid
   };
 }
-
-const rows = [
-  createData(1, 'John Doe', 'Location A', '10:30 AM'),
-  createData(2, 'Jane Smith', 'Location B', '11:15 AM'),
-  createData(3, 'Mike Brown', 'Location C', '12:45 PM'),
-  createData(4, 'Lisa White', 'Location D', '1:30 PM'),
-  createData(5, 'Tom Green', 'Location E', '2:20 PM'),
-  createData(6, 'Mike Wheeler', 'Location F', '12:20 PM'),
-  createData(7, 'Will Byers', 'Location G', '11:20 PM'),
-  createData(8, 'Max Mayfield', 'Location H', '9:20 PM'),
-];
 
 export default function AlertTable() {
   const [order, setOrder] = React.useState<Order>('asc');
   const [orderBy, setOrderBy] = React.useState<keyof Data>('time');
+  const [alerts, setAlerts] = React.useState<Data[]>([]);
+  
+  const {officer} = useSelector((state : RootState)=>{
+    return state.profile
+  });
+
+  React.useEffect(()=>{
+    (async()=>{
+      if(officer){
+        console.log("pls wait....");
+        const response = await apiConnector({method: "POST", url : ALERT.alert, bodyData: {station_id: officer.thana_id}});
+        console.log(response);
+        setAlerts([]);
+        response.alerts.map((alert : {
+          longitude: string,
+          latitude: string,
+          user: {
+            firstname: string,
+            lastname: string,
+            gender: string,
+            occupation: string,
+            maritalStatus: boolean,
+            image: string,
+            employer: string,
+            mobile: string,
+            criminalBackground: boolean,
+            isEmployed: boolean,
+            bookmarkedContact: string[],
+            _id: string
+          }
+          _id: string
+        })=>{
+          setAlerts(prev => [...prev, createData(
+            alert._id,
+            alert.user.firstname,
+            alert.user.lastname,
+            alert.user.firstname + " " + alert.user.lastname,
+            alert.user.mobile,
+            `${Math.floor(Math.random() * 60)} minutes ago`,
+            alert.longitude,
+            alert.latitude,
+            alert.user.gender,
+            alert.user.occupation,
+            alert.user.maritalStatus,
+            alert.user.image,
+            alert.user.employer,
+            alert.user.criminalBackground,
+            alert.user.isEmployed,
+            alert.user.bookmarkedContact,
+            alert.user._id
+          )])
+        });
+      }
+
+    })();
+  }, [socket, officer]);
+
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
@@ -82,17 +173,6 @@ export default function AlertTable() {
   const handleChangeDense = (event: React.ChangeEvent<HTMLInputElement>) => {
     setDense(event.target.checked);
   };
-
-  const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
-
-  const visibleRows = React.useMemo(
-    () =>
-      stableSort(rows, getComparator(order, orderBy)).slice(
-        page * rowsPerPage,
-        page * rowsPerPage + rowsPerPage,
-      ),
-    [order, orderBy, page, rowsPerPage],
-  );
 
   return (
     <Box sx={{ width: '100%' }}>
@@ -127,37 +207,39 @@ export default function AlertTable() {
               <TableRow>
                 <TableCell>SOS ID</TableCell>
                 <TableCell>Username</TableCell>
-                <TableCell>Signal Source</TableCell>
+                <TableCell>Contact Number</TableCell>
                 <TableCell>Time</TableCell>
-                <TableCell align="right">Take Action</TableCell>
+                <TableCell align="right">Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {visibleRows.map((row, index) => {
-                return (
+              {alerts
+                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                .map((row) => (
                   <TableRow hover key={row.sosId}>
                     <TableCell>{row.sosId}</TableCell>
                     <TableCell>{row.username}</TableCell>
-                    <TableCell>{row.signalSource}</TableCell>
+                    <TableCell>{row.mobile}</TableCell>
                     <TableCell>{row.time}</TableCell>
-                    <TableCell align="right">
-                      <AlertModal/>
+                    <TableCell>
+                      <div className='flex flex-row justify-end gap-4'>
+                        <div>
+                          <ChatModal user_id={row.userid}/>
+                        </div>
+                        <div>
+                          <AlertModal data={row}/>
+                        </div>
+                      </div>
                     </TableCell>
                   </TableRow>
-                );
-              })}
-              {emptyRows > 0 && (
-                <TableRow style={{ height: (dense ? 33 : 53) * emptyRows }}>
-                  <TableCell colSpan={6} />
-                </TableRow>
-              )}
+              ))}
             </TableBody>
           </Table>
         </TableContainer>
         <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
-          count={rows.length}
+          count={alerts.length}
           rowsPerPage={rowsPerPage}
           page={page}
           onPageChange={handleChangePage}

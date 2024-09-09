@@ -10,6 +10,12 @@ const officerSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
+    username:{
+        type: String,
+        trim: true,
+        required: true,
+        unique: true
+    },
     email: {
         type: String,
         required: true,
@@ -41,9 +47,11 @@ const officerSchema = new mongoose.Schema({
         required: true
     },
     thana_id: {
-        type: Number,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Station',
         required: true
     }
 });
 
-module.exports = mongoose.model("Officer", officerSchema);
+const Officers = new mongoose.model("Officer", officerSchema);
+module.exports = Officers;
