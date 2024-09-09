@@ -1,0 +1,1587 @@
+State	Day/Night	Population Density	Nearest Police Station	Crime Taken Place
+Andhra Pradesh	Night	14601	4	Yes
+Andhra Pradesh	Night	15319	2.7	Yes
+Andhra Pradesh	Night	15736	3.1	Yes
+Andhra Pradesh	Night	3148	6.8	Yes
+Andhra Pradesh	Night	3854	5.4	Yes
+Andhra Pradesh	Night	3582	1.9	Yes
+Andhra Pradesh	Night	3211	8.6	Yes
+Andhra Pradesh	Night	12653	4.5	Yes
+Andhra Pradesh	Night	13211	0.9	Yes
+Andhra Pradesh	Night	13748	4.8	Yes
+Andhra Pradesh	Night	9555	12.1	Yes
+Andhra Pradesh	Night	8163	17.2	Yes
+Andhra Pradesh	Night	6266	23.9	Yes
+Andhra Pradesh	Night	6879	21.1	Yes
+Andhra Pradesh	Night	7223	15.4	Yes
+Andhra Pradesh	Night	7789	11.6	Yes
+Andhra Pradesh	Night	5411	31.5	Yes
+Andhra Pradesh	Night	5632	33.3	Yes
+Andhra Pradesh	Night	4932	36.2	Yes
+Andhra Pradesh	Night	3156	21.3	Yes
+Andhra Pradesh	Night	7399	17.6	Yes
+Andhra Pradesh	Night	6821	32.6	Yes
+Andhra Pradesh	Night	7348	29.7	Yes
+Andhra Pradesh	Day	14683	8.9	Yes
+Andhra Pradesh	Day	15896	6.3	Yes
+Andhra Pradesh	Day	3785	23.5	Yes
+Andhra Pradesh	Day	4131	30.6	Yes
+Andhra Pradesh	Day	12116	2.7	Yes
+Andhra Pradesh	Day	13624	0.8	Yes
+Arunachal Pradesh	Night	2541	14	Yes
+Arunachal Pradesh	Night	1013	77	Yes
+Assam	Night	4800	3.5	Yes
+Assam	Night	3000	4	Yes
+Assam	Night	3750	4.5	Yes
+Assam	Night	3200	5	Yes
+Assam	Night	3500	6	Yes
+Assam	Night	2800	6.5	Yes
+Assam	Night	2750	5.5	Yes
+Assam	Night	3100	7	Yes
+Assam	Night	2950	8	Yes
+Assam	Night	3300	6	Yes
+Assam	Night	2850	7.5	Yes
+Assam	Night	2600	9	Yes
+Assam	Night	3600	7	Yes
+Assam	Night	3800	7.5	Yes
+Assam	Night	3050	8	Yes
+Assam	Night	2750	9	Yes
+Assam	Night	2450	9.5	Yes
+Assam	Night	2350	10	Yes
+Assam	Night	3300	7	Yes
+Assam	Night	2400	9	Yes
+Assam	Night	2900	8.5	Yes
+Assam	Night	2800	8	Yes
+Assam	Night	3000	8.5	Yes
+Assam	Night	2200	9.5	Yes
+Assam	Night	1950	10	Yes
+Assam	Night	2100	9.5	Yes
+Assam	Night	2850	8	Yes
+Assam	Night	3100	7	Yes
+Assam	Night	2750	8.5	Yes
+Assam	Night	2200	10	Yes
+Assam	Night	2500	9	Yes
+Assam	Night	2150	9	Yes
+Assam	Night	2650	10	Yes
+Assam	Night	2900	8	Yes
+Assam	Night	2750	8.5	Yes
+Assam	Night	2500	9	Yes
+Assam	Night	2650	9.5	Yes
+Assam	Night	2550	10	Yes
+Assam	Night	2900	8.5	Yes
+Assam	Night	2350	10	Yes
+Assam	Night	2800	9	Yes
+Assam	Night	2587	8.4	Yes
+Assam	Day	2631	9.2	Yes
+Assam	Day	2911	7.5	Yes
+Assam	Day	2950	8.5	Yes
+Assam	Day	2677	9.4	Yes
+Assam	Day	2700	8.05	Yes
+Assam	Day	2901	8.7	Yes
+Assam	Day	2856	8.3	Yes
+Assam	Day	2534	9.6	Yes
+Assam	Day	4721	2.1	Yes
+Assam	Day	3998	7.3	Yes
+Bihar	Night	14800	3	Yes
+Bihar	Night	8000	4.5	Yes
+Bihar	Night	5900	5	Yes
+Bihar	Night	6200	5	Yes
+Bihar	Night	6500	6	Yes
+Bihar	Night	5800	6.5	Yes
+Bihar	Night	5600	6	Yes
+Bihar	Night	4800	7	Yes
+Bihar	Night	5000	7.5	Yes
+Bihar	Night	6300	6.5	Yes
+Bihar	Night	4700	7	Yes
+Bihar	Night	4900	7.5	Yes
+Bihar	Night	5300	7.5	Yes
+Bihar	Night	4600	8	Yes
+Bihar	Night	4800	7	Yes
+Bihar	Day	3900	8.5	Yes
+Bihar	Day	4200	8	Yes
+Bihar	Day	3800	7.5	Yes
+Bihar	Day	4100	8	Yes
+Chhattisgarh	Night	5500	4	Yes
+Chhattisgarh	Night	3500	6	Yes
+Chhattisgarh	Night	4000	6.5	Yes
+Chhattisgarh	Night	5800	4.5	Yes
+Chhattisgarh	Night	3800	6	Yes
+Chhattisgarh	Night	3200	7	Yes
+Chhattisgarh	Night	2900	8	Yes
+Chhattisgarh	Night	3000	7	Yes
+Chhattisgarh	Night	2800	9	Yes
+Chhattisgarh	Night	2700	9	Yes
+Chhattisgarh	Night	2500	10	Yes
+Chhattisgarh	Night	3100	8.5	Yes
+Chhattisgarh	Night	2900	9	Yes
+Chhattisgarh	Night	3600	6.5	Yes
+Chhattisgarh	Night	2400	10	Yes
+Chhattisgarh	Night	3200	8	Yes
+Chhattisgarh	Night	2700	9	Yes
+Chhattisgarh	Night	2600	9.5	Yes
+Chhattisgarh	Night	2500	10	Yes
+Chhattisgarh	Night	3400	8	Yes
+Chhattisgarh	Night	2600	10	Yes
+Chhattisgarh	Night	5600	5	Yes
+Chhattisgarh	Night	3900	7	Yes
+Chhattisgarh	Night	3200	8	Yes
+Chhattisgarh	Night	2900	8.5	Yes
+Chhattisgarh	Night	3000	7.5	Yes
+Chhattisgarh	Night	2800	9.5	Yes
+Chhattisgarh	Night	2700	9	Yes
+Chhattisgarh	Night	2500	10	Yes
+Chhattisgarh	Night	3100	8.5	Yes
+Chhattisgarh	Night	2900	9	Yes
+Chhattisgarh	Night	2400	10	Yes
+Chhattisgarh	Night	3200	8	Yes
+Chhattisgarh	Night	2700	9.5	Yes
+Chhattisgarh	Night	2600	9.5	Yes
+Chhattisgarh	Night	2500	10	Yes
+Chhattisgarh	Night	3400	8	Yes
+Chhattisgarh	Night	2600	10	Yes
+Chhattisgarh	Night	5800	5	Yes
+Chhattisgarh	Night	3900	7	Yes
+Chhattisgarh	Night	3200	8	Yes
+Chhattisgarh	Night	2900	8.5	Yes
+Chhattisgarh	Night	3000	7.5	Yes
+Chhattisgarh	Night	2800	9.5	Yes
+Chhattisgarh	Night	2700	9	Yes
+Chhattisgarh	Night	2500	10	Yes
+Chhattisgarh	Night	3100	8.5	Yes
+Chhattisgarh	Night	2900	9	Yes
+Chhattisgarh	Day	2400	10	Yes
+Chhattisgarh	Day	3200	8	Yes
+Chhattisgarh	Day	2700	9.5	Yes
+Chhattisgarh	Day	2600	9.5	Yes
+Chhattisgarh	Day	2500	10	Yes
+Chhattisgarh	Day	3400	8	Yes
+Chhattisgarh	Day	2600	10	Yes
+Chhattisgarh	Day	5600	5	Yes
+Chhattisgarh	Day	3900	7	Yes
+Chhattisgarh	Day	3200	8	Yes
+Chhattisgarh	Day	2900	8.5	Yes
+Goa	Night	9000	3	Yes
+Goa	Day	8500	3.5	Yes
+Gujarat	Night	18000	3	Yes
+Gujarat	Night	16000	3.5	Yes
+Gujarat	Night	10500	4	Yes
+Gujarat	Night	8000	4.5	Yes
+Gujarat	Night	7500	4	Yes
+Gujarat	Night	7000	5	Yes
+Gujarat	Night	6800	6	Yes
+Gujarat	Night	6500	5.5	Yes
+Gujarat	Night	5500	6	Yes
+Gujarat	Night	5000	6.5	Yes
+Gujarat	Night	4800	7	Yes
+Gujarat	Night	4600	7.5	Yes
+Gujarat	Day	12000	4	Yes
+Gujarat	Day	4200	8	Yes
+Gujarat	Day	4000	8.5	Yes
+Haryana	Night	11000	4	Yes
+Haryana	Night	12000	4.5	Yes
+Haryana	Night	6000	5	Yes
+Haryana	Night	5800	5.5	Yes
+Haryana	Night	4900	6	Yes
+Haryana	Night	5200	6.5	Yes
+Haryana	Night	5000	6	Yes
+Haryana	Night	4800	7	Yes
+Haryana	Night	4900	6.5	Yes
+Haryana	Night	4600	7.5	Yes
+Haryana	Night	4200	7	Yes
+Haryana	Night	4000	7.5	Yes
+Haryana	Night	4500	7	Yes
+Haryana	Night	4100	8	Yes
+Haryana	Night	3800	8.5	Yes
+Haryana	Night	4000	8	Yes
+Haryana	Night	4700	7.5	Yes
+Haryana	Night	3900	8	Yes
+Haryana	Night	4600	7	Yes
+Haryana	Night	4100	8	Yes
+Haryana	Night	4200	8.5	Yes
+Haryana	Night	4000	8.5	Yes
+Haryana	Night	3800	9	Yes
+Haryana	Night	3700	9	Yes
+Haryana	Night	4000	8.5	Yes
+Haryana	Night	4100	8	Yes
+Haryana	Night	3500	9	Yes
+Haryana	Night	3700	9	Yes
+Haryana	Day	3800	8.5	Yes
+Haryana	Day	3600	9.5	Yes
+Haryana	Day	3900	9	Yes
+Haryana	Day	3500	9.5	Yes
+Haryana	Day	3400	9.5	Yes
+Haryana	Day	3600	9	Yes
+Haryana	Day	5500	6	Yes
+Himachal Pradesh	Night	3200	5	Yes
+Himachal Pradesh	Night	2500	6.5	Yes
+Himachal Pradesh	Night	2800	6	Yes
+Himachal Pradesh	Night	2700	7	Yes
+Himachal Pradesh	Night	1500	8	Yes
+Himachal Pradesh	Night	1800	8.5	Yes
+Himachal Pradesh	Night	2200	7.5	Yes
+Himachal Pradesh	Night	2000	7	Yes
+Himachal Pradesh	Day	2400	6	Yes
+Himachal Pradesh	Day	4164	3.8	Yes
+Jammu & Kashmir	Night	11000	4	Yes
+Jammu & Kashmir	Night	6800	4.5	Yes
+Jammu & Kashmir	Night	3500	6	Yes
+Jammu & Kashmir	Night	3600	6.5	Yes
+Jammu & Kashmir	Night	2800	7	Yes
+Jammu & Kashmir	Day	2500	7.5	Yes
+Jammu & Kashmir	Day	3000	6.5	Yes
+Jammu & Kashmir	Day	2200	8	Yes
+Jammu & Kashmir	Day	2100	8.5	Yes
+Jharkhand	Night	8500	4.5	Yes
+Jharkhand	Night	9200	4	Yes
+Jharkhand	Night	12000	3.5	Yes
+Jharkhand	Night	6000	5	Yes
+Jharkhand	Night	4500	6	Yes
+Jharkhand	Night	3900	6.5	Yes
+Jharkhand	Night	4000	6.5	Yes
+Jharkhand	Night	4800	6	Yes
+Jharkhand	Night	3200	7	Yes
+Jharkhand	Night	3800	6.5	Yes
+Jharkhand	Night	4100	6	Yes
+Jharkhand	Night	2900	8	Yes
+Jharkhand	Night	3200	7	Yes
+Jharkhand	Night	3500	7	Yes
+Jharkhand	Night	10000	4	Yes
+Jharkhand	Night	2700	8.5	Yes
+Jharkhand	Night	2500	9	Yes
+Jharkhand	Night	3100	7.5	Yes
+Jharkhand	Night	2900	8	Yes
+Jharkhand	Day	2800	7.5	Yes
+Jharkhand	Day	3600	7	Yes
+Jharkhand	Day	3500	7	Yes
+Jharkhand	Day	3300	7.5	Yes
+Jharkhand	Day	4200	6.5	Yes
+Jharkhand	Day	3500	7	Yes
+Jharkhand	Day	5800	5.5	Yes
+Jharkhand	Day	6200	5	Yes
+Jharkhand	Day	3700	6.5	Yes
+Jharkhand	Day	2900	8	Yes
+Jharkhand	Day	3000	8	Yes
+Karnataka	Night	11000	3.5	Yes
+Karnataka	Night	7000	4	Yes
+Karnataka	Night	6000	5	Yes
+Karnataka	Night	4500	5	Yes
+Karnataka	Night	3800	5.5	Yes
+Karnataka	Night	4200	5.5	Yes
+Karnataka	Night	3500	6	Yes
+Karnataka	Night	3700	6	Yes
+Karnataka	Night	2900	6.5	Yes
+Karnataka	Night	2700	7	Yes
+Karnataka	Night	3000	6.5	Yes
+Karnataka	Night	2600	7.5	Yes
+Karnataka	Day	1700	7.5	Yes
+Karnataka	Day	2100	7	Yes
+Karnataka	Day	2800	6.5	Yes
+Karnataka	Day	2500	7	Yes
+Kerala	Night	5000	4	Yes
+Kerala	Night	7400	3.5	Yes
+Kerala	Night	6100	4.5	Yes
+Kerala	Night	4900	5	Yes
+Kerala	Night	6000	5	Yes
+Kerala	Night	4200	5.5	Yes
+Kerala	Night	3900	5.5	Yes
+Kerala	Night	4100	5.5	Yes
+Kerala	Night	3800	6	Yes
+Kerala	Night	3500	6.5	Yes
+Kerala	Night	2500	7	Yes
+Kerala	Night	2800	6.5	Yes
+Kerala	Night	2100	7.5	Yes
+Kerala	Night	3200	7	Yes
+Kerala	Night	3500	7	Yes
+Kerala	Night	3300	7.5	Yes
+Kerala	Night	3100	6.5	Yes
+Kerala	Night	4000	6	Yes
+Kerala	Night	4400	6	Yes
+Kerala	Night	3600	7	Yes
+Kerala	Night	3800	6.5	Yes
+Kerala	Night	4200	6	Yes
+Kerala	Night	3900	6	Yes
+Kerala	Night	4300	6	Yes
+Kerala	Night	4800	5.5	Yes
+Kerala	Night	4600	5.5	Yes
+Kerala	Night	3700	6.5	Yes
+Kerala	Night	4500	6	Yes
+Kerala	Night	4700	5.5	Yes
+Kerala	Night	4100	6	Yes
+Kerala	Night	4500	5.5	Yes
+Kerala	Night	3600	6	Yes
+Kerala	Night	2700	7	Yes
+Kerala	Night	4200	6	Yes
+Kerala	Night	4100	6	Yes
+Kerala	Night	5300	5	Yes
+Kerala	Night	3700	6.5	Yes
+Kerala	Night	5500	5	Yes
+Kerala	Night	4900	5.5	Yes
+Kerala	Night	6000	5	Yes
+Kerala	Night	3800	6	Yes
+Kerala	Night	5000	5	Yes
+Kerala	Night	4100	6	Yes
+Kerala	Night	5100	5	Yes
+Kerala	Night	5200	5	Yes
+Kerala	Night	3500	7	Yes
+Kerala	Day	4200	6	Yes
+Kerala	Day	3700	6.5	Yes
+Kerala	Day	4500	6	Yes
+Kerala	Day	4000	6	Yes
+Kerala	Day	3700	6.5	Yes
+Kerala	Day	3900	6	Yes
+Kerala	Day	4200	6	Yes
+Kerala	Day	6000	5	Yes
+Kerala	Day	4600	5.5	Yes
+Kerala	Day	4200	6	Yes
+Kerala	Day	3800	6	Yes
+Kerala	Day	5200	5	Yes
+Kerala	Day	3800	6.5	Yes
+Kerala	Day	5177	4.2	Yes
+Madhya Pradesh	Night	905	4.9	Yes
+Madhya Pradesh	Night	938	3.6	Yes
+Madhya Pradesh	Night	944	4.5	Yes
+Madhya Pradesh	Night	857	3.8	Yes
+Madhya Pradesh	Night	872	3.1	Yes
+Madhya Pradesh	Night	911	4.5	Yes
+Madhya Pradesh	Night	908	4.4	Yes
+Madhya Pradesh	Night	955	4.7	Yes
+Madhya Pradesh	Night	889	4	Yes
+Madhya Pradesh	Night	995	3.7	Yes
+Madhya Pradesh	Night	928	4	Yes
+Madhya Pradesh	Night	892	4.1	Yes
+Madhya Pradesh	Night	889	4.4	Yes
+Madhya Pradesh	Night	871	3.4	Yes
+Madhya Pradesh	Night	862	4.4	Yes
+Madhya Pradesh	Night	1268	3.3	Yes
+Madhya Pradesh	Night	1143	4.5	Yes
+Madhya Pradesh	Night	1213	4.4	Yes
+Madhya Pradesh	Night	1270	3.1	Yes
+Madhya Pradesh	Night	1234	3.9	Yes
+Madhya Pradesh	Night	1151	4.4	Yes
+Madhya Pradesh	Night	1145	4.8	Yes
+Madhya Pradesh	Night	1230	4.9	Yes
+Madhya Pradesh	Night	1282	3.9	Yes
+Madhya Pradesh	Night	1254	3.6	Yes
+Madhya Pradesh	Night	1198	4.4	Yes
+Madhya Pradesh	Night	1149	4.4	Yes
+Madhya Pradesh	Night	1238	3.7	Yes
+Madhya Pradesh	Night	1262	5	Yes
+Madhya Pradesh	Night	1112	3.8	Yes
+Madhya Pradesh	Night	817	4.2	Yes
+Madhya Pradesh	Night	907	4.8	Yes
+Madhya Pradesh	Night	984	5.2	Yes
+Madhya Pradesh	Night	986	4.4	Yes
+Madhya Pradesh	Night	940	5.3	Yes
+Madhya Pradesh	Night	1000	5.5	Yes
+Madhya Pradesh	Night	868	6	Yes
+Madhya Pradesh	Night	931	5.6	Yes
+Madhya Pradesh	Night	921	4.4	Yes
+Madhya Pradesh	Night	938	5.6	Yes
+Madhya Pradesh	Night	961	5.2	Yes
+Madhya Pradesh	Night	844	5.7	Yes
+Madhya Pradesh	Night	831	4.3	Yes
+Madhya Pradesh	Night	924	5.1	Yes
+Madhya Pradesh	Night	942	4.9	Yes
+Madhya Pradesh	Night	774	5.4	Yes
+Madhya Pradesh	Night	807	4.9	Yes
+Madhya Pradesh	Night	767	6.7	Yes
+Madhya Pradesh	Night	828	6	Yes
+Madhya Pradesh	Night	848	5.6	Yes
+Madhya Pradesh	Night	890	5.7	Yes
+Madhya Pradesh	Night	762	4.6	Yes
+Madhya Pradesh	Night	791	5.6	Yes
+Madhya Pradesh	Night	795	6.7	Yes
+Madhya Pradesh	Night	1648	5.2	Yes
+Madhya Pradesh	Night	821	6.3	Yes
+Madhya Pradesh	Night	717	5.1	Yes
+Madhya Pradesh	Night	814	4.9	Yes
+Madhya Pradesh	Night	736	6.8	Yes
+Madhya Pradesh	Night	714	4.8	Yes
+Madhya Pradesh	Night	716	5.8	Yes
+Madhya Pradesh	Night	700	4.7	Yes
+Madhya Pradesh	Night	742	4.2	Yes
+Madhya Pradesh	Night	722	5.9	Yes
+Madhya Pradesh	Night	649	4.9	Yes
+Madhya Pradesh	Night	704	5.3	Yes
+Madhya Pradesh	Night	2109	4.6	Yes
+Madhya Pradesh	Night	728	5.2	Yes
+Madhya Pradesh	Night	774	5.1	Yes
+Madhya Pradesh	Night	709	5.6	Yes
+Madhya Pradesh	Night	644	4.8	Yes
+Madhya Pradesh	Night	751	5.7	Yes
+Madhya Pradesh	Night	753	5.6	Yes
+Madhya Pradesh	Night	730	5.3	Yes
+Madhya Pradesh	Night	778	5.8	Yes
+Madhya Pradesh	Night	473	5.9	Yes
+Madhya Pradesh	Night	568	5.1	Yes
+Madhya Pradesh	Night	594	5	Yes
+Madhya Pradesh	Night	441	5.3	Yes
+Madhya Pradesh	Night	471	5.2	Yes
+Madhya Pradesh	Night	462	5.5	Yes
+Madhya Pradesh	Night	446	5.9	Yes
+Madhya Pradesh	Night	468	6.5	Yes
+Madhya Pradesh	Night	498	6	Yes
+Madhya Pradesh	Night	502	5.4	Yes
+Madhya Pradesh	Night	429	5.4	Yes
+Madhya Pradesh	Night	473	5.3	Yes
+Madhya Pradesh	Night	447	6.9	Yes
+Madhya Pradesh	Night	480	6.3	Yes
+Madhya Pradesh	Night	519	6.5	Yes
+Madhya Pradesh	Night	386	9.9	Yes
+Madhya Pradesh	Night	401	8.9	Yes
+Madhya Pradesh	Night	487	8.2	Yes
+Madhya Pradesh	Night	375	7.9	Yes
+Madhya Pradesh	Night	378	8.2	Yes
+Madhya Pradesh	Night	376	10.7	Yes
+Madhya Pradesh	Night	499	6.9	Yes
+Madhya Pradesh	Night	456	10.9	Yes
+Madhya Pradesh	Night	404	7	Yes
+Madhya Pradesh	Night	356	7.8	Yes
+Madhya Pradesh	Night	434	9.6	Yes
+Madhya Pradesh	Night	363	6.9	Yes
+Madhya Pradesh	Night	429	7.7	Yes
+Madhya Pradesh	Night	439	8.5	Yes
+Madhya Pradesh	Night	402	8	Yes
+Madhya Pradesh	Night	334	8.2	Yes
+Madhya Pradesh	Night	437	7.3	Yes
+Madhya Pradesh	Night	393	7.4	Yes
+Madhya Pradesh	Night	346	8.1	Yes
+Madhya Pradesh	Night	358	7.3	Yes
+Madhya Pradesh	Night	398	9.4	Yes
+Madhya Pradesh	Night	417	9.5	Yes
+Madhya Pradesh	Night	438	7.3	Yes
+Madhya Pradesh	Night	403	8	Yes
+Madhya Pradesh	Night	393	7.7	Yes
+Madhya Pradesh	Night	417	8.6	Yes
+Madhya Pradesh	Night	424	9.2	Yes
+Madhya Pradesh	Night	331	8	Yes
+Madhya Pradesh	Night	393	9.9	Yes
+Madhya Pradesh	Night	447	9.5	Yes
+Madhya Pradesh	Night	336	8.3	Yes
+Madhya Pradesh	Night	365	9.9	Yes
+Madhya Pradesh	Night	412	6.2	Yes
+Madhya Pradesh	Night	471	7.4	Yes
+Madhya Pradesh	Night	385	6.6	Yes
+Madhya Pradesh	Night	451	7.3	Yes
+Madhya Pradesh	Night	348	9.5	Yes
+Madhya Pradesh	Night	470	11.8	Yes
+Madhya Pradesh	Night	403	14.2	Yes
+Madhya Pradesh	Night	417	8.9	Yes
+Madhya Pradesh	Night	470	9.1	Yes
+Madhya Pradesh	Night	459	7.2	Yes
+Madhya Pradesh	Night	368	9.6	Yes
+Madhya Pradesh	Night	356	8.7	Yes
+Madhya Pradesh	Night	324	7.1	Yes
+Madhya Pradesh	Night	302	7.7	Yes
+Madhya Pradesh	Night	278	8	Yes
+Madhya Pradesh	Night	295	7.7	Yes
+Madhya Pradesh	Night	283	7.9	Yes
+Madhya Pradesh	Night	381	8.5	Yes
+Madhya Pradesh	Day	939	4.9	Yes
+Madhya Pradesh	Day	925	4.1	Yes
+Madhya Pradesh	Day	911	3.1	Yes
+Madhya Pradesh	Day	2431	3.5	Yes
+Madhya Pradesh	Day	866	4.2	Yes
+Madhya Pradesh	Day	866	14	Yes
+Madhya Pradesh	Day	940	3.9	Yes
+Madhya Pradesh	Day	1222	3.7	Yes
+Madhya Pradesh	Day	1213	4.4	Yes
+Madhya Pradesh	Day	1152	4.3	Yes
+Madhya Pradesh	Day	1246	3.4	Yes
+Madhya Pradesh	Day	1264	4.2	Yes
+Madhya Pradesh	Day	398	8.8	Yes
+Madhya Pradesh	Day	469	7	Yes
+Madhya Pradesh	Day	395	7.5	Yes
+Madhya Pradesh	Day	360	8.1	Yes
+Madhya Pradesh	Day	447	8.3	Yes
+Madhya Pradesh	Day	283	7.7	Yes
+Madhya Pradesh	Day	354	8.1	Yes
+Madhya Pradesh	Day	348	9.1	Yes
+Madhya Pradesh	Day	625	10.1	Yes
+Madhya Pradesh	Day	999	6.7	Yes
+Madhya Pradesh	Day	747	14.5	Yes
+Madhya Pradesh	Day	688	12.6	Yes
+Madhya Pradesh	Day	947	12.2	Yes
+Maharashtra	Night	21403	2.2	Yes
+Maharashtra	Night	21110	3.8	Yes
+Maharashtra	Night	25353	3.6	Yes
+Maharashtra	Night	26325	2.1	Yes
+Maharashtra	Night	9986	3.7	Yes
+Maharashtra	Night	9216	3.1	Yes
+Maharashtra	Night	9957	2.1	Yes
+Maharashtra	Night	11901	2.5	Yes
+Maharashtra	Night	11175	2.5	Yes
+Maharashtra	Night	3408	3.6	Yes
+Maharashtra	Night	3003	5.9	Yes
+Maharashtra	Night	3713	4.9	Yes
+Maharashtra	Night	3956	4	Yes
+Maharashtra	Night	3829	4.3	Yes
+Maharashtra	Night	7764	3.3	Yes
+Maharashtra	Night	6048	3.7	Yes
+Maharashtra	Night	7558	4.5	Yes
+Maharashtra	Night	6770	4.6	Yes
+Maharashtra	Night	6577	4.1	Yes
+Maharashtra	Night	4185	4.5	Yes
+Maharashtra	Night	3682	5.7	Yes
+Maharashtra	Night	4087	4.1	Yes
+Maharashtra	Night	4135	4.9	Yes
+Maharashtra	Night	3889	4.3	Yes
+Maharashtra	Night	6598	3.2	Yes
+Maharashtra	Night	11772	5.8	Yes
+Maharashtra	Night	11427	3.3	Yes
+Maharashtra	Night	4049	4.3	Yes
+Maharashtra	Night	3428	3.3	Yes
+Maharashtra	Night	2178	7.5	Yes
+Maharashtra	Night	4645	3.9	Yes
+Maharashtra	Night	6168	3.4	Yes
+Maharashtra	Night	11582	4.1	Yes
+Maharashtra	Night	9425	7	Yes
+Maharashtra	Night	2775	3.4	Yes
+Maharashtra	Night	5236	7.4	Yes
+Maharashtra	Night	2182	5.4	Yes
+Maharashtra	Night	4073	3.6	Yes
+Maharashtra	Night	10288	2.6	Yes
+Maharashtra	Night	14371	3.1	Yes
+Maharashtra	Day	21452	2.4	Yes
+Maharashtra	Day	16159	5.6	Yes
+Maharashtra	Day	14885	6.9	Yes
+Maharashtra	Day	12414	7.7	Yes
+Maharashtra	Day	7949	9.1	Yes
+Maharashtra	Day	11419	5.8	Yes
+Maharashtra	Day	16238	9.7	Yes
+Maharashtra	Day	7843	5.2	Yes
+Maharashtra	Day	15975	10.5	Yes
+Maharashtra	Day	6732	10.5	Yes
+Maharashtra	Day	12266	9.1	Yes
+Maharashtra	Day	5601	5.7	Yes
+Maharashtra	Day	2018	6.5	Yes
+Maharashtra	Day	12558	5.1	Yes
+Maharashtra	Day	4944	10.1	Yes
+Maharashtra	Day	7781	5.3	Yes
+Maharashtra	Day	23111	1.9	Yes
+Maharashtra	Day	31394	2.1	Yes
+Maharashtra	Day	4278	9.6	Yes
+Maharashtra	Day	1849	13.6	Yes
+Manipur	Night	159	7.9	Yes
+Manipur	Night	87	16.8	Yes
+Meghalaya	Night	189	7.8	Yes
+Meghalaya	Night	93	11.3	Yes
+Meghalaya	Night	264	4.6	Yes
+Mizoram	Night	408	3.6	Yes
+Nagaland	Night	514	2.9	Yes
+Odisha	Night	5315	3.2	Yes
+Odisha	Night	5600	4.8	Yes
+Odisha	Night	5012	4	Yes
+Odisha	Night	8424	3.3	Yes
+Odisha	Night	7158	3.8	Yes
+Odisha	Night	5687	3.4	Yes
+Odisha	Night	7151	3.2	Yes
+Odisha	Night	7385	4.1	Yes
+Odisha	Night	6078	3.6	Yes
+Odisha	Night	8305	4.3	Yes
+Odisha	Night	6936	3.2	Yes
+Odisha	Night	6844	4.7	Yes
+Odisha	Night	3973	2.4	Yes
+Odisha	Night	4033	3.7	Yes
+Odisha	Night	4706	4	Yes
+Odisha	Night	3347	3.5	Yes
+Odisha	Night	4160	3.2	Yes
+Odisha	Night	3522	4	Yes
+Odisha	Night	4106	2.7	Yes
+Odisha	Night	4359	5.4	Yes
+Odisha	Night	4160	5.3	Yes
+Odisha	Night	4469	5	Yes
+Odisha	Night	4367	5.1	Yes
+Odisha	Night	3863	5.5	Yes
+Odisha	Night	4461	5	Yes
+Odisha	Night	3938	4.3	Yes
+Odisha	Night	4371	5.8	Yes
+Odisha	Night	4082	4.7	Yes
+Odisha	Night	3966	4.2	Yes
+Odisha	Night	3392	4	Yes
+Odisha	Night	2018	3.7	Yes
+Odisha	Night	4087	4.1	Yes
+Odisha	Night	2102	5.3	Yes
+Odisha	Night	1022	5.3	Yes
+Odisha	Night	4185	7.7	Yes
+Odisha	Night	4139	5.2	Yes
+Odisha	Night	1204	7	Yes
+Odisha	Night	1320	4	Yes
+Odisha	Night	3821	4.4	Yes
+Odisha	Night	1677	5.2	Yes
+Odisha	Day	1100	6.6	Yes
+Odisha	Day	1501	4.1	Yes
+Odisha	Day	2313	7	Yes
+Odisha	Day	1071	6.7	Yes
+Odisha	Day	2564	5.2	Yes
+Odisha	Day	3333	1.1	Yes
+Odisha	Day	4988	2.1	Yes
+Odisha	Day	864	9.2	Yes
+Odisha	Day	712	11.3	Yes
+Odisha	Day	6542	3.8	Yes
+Punjab	Night	10000	2	Yes
+Punjab	Night	12500	1.5	Yes
+Punjab	Night	9500	1.8	Yes
+Punjab	Night	8000	2.5	Yes
+Punjab	Night	6500	3	Yes
+Punjab	Night	11000	1.6	Yes
+Punjab	Night	7500	2.7	Yes
+Punjab	Night	6000	3.5	Yes
+Punjab	Night	5800	4	Yes
+Punjab	Night	7000	2.9	Yes
+Punjab	Night	7654	2.6	Yes
+Punjab	Night	8706	3.2	Yes
+Punjab	Night	6856	3.3	Yes
+Punjab	Night	7196	2.5	Yes
+Punjab	Night	10271	2.4	Yes
+Punjab	Day	6609	2	Yes
+Punjab	Day	8607	3.2	Yes
+Punjab	Day	10790	2.1	Yes
+Punjab	Day	7615	3.4	Yes
+Rajasthan	Night	5670	3.4	Yes
+Rajasthan	Night	6452	3.7	Yes
+Rajasthan	Night	7033	3.3	Yes
+Rajasthan	Night	6677	1.9	Yes
+Rajasthan	Night	5788	3.9	Yes
+Rajasthan	Night	4144	3.1	Yes
+Rajasthan	Night	7189	3	Yes
+Rajasthan	Night	7996	3.8	Yes
+Rajasthan	Night	5877	2.4	Yes
+Rajasthan	Night	6485	3.1	Yes
+Rajasthan	Night	5546	2.6	Yes
+Rajasthan	Night	6109	2.6	Yes
+Rajasthan	Night	4532	2.7	Yes
+Rajasthan	Night	5891	2.5	Yes
+Rajasthan	Night	5767	3	Yes
+Rajasthan	Night	5480	3.2	Yes
+Rajasthan	Night	7807	3.7	Yes
+Rajasthan	Night	6389	3.4	Yes
+Rajasthan	Night	6045	3.2	Yes
+Rajasthan	Night	7126	4	Yes
+Rajasthan	Night	4911	2.6	Yes
+Rajasthan	Night	4037	3.8	Yes
+Rajasthan	Night	4231	3.6	Yes
+Rajasthan	Night	6334	3.1	Yes
+Rajasthan	Night	4691	3.7	Yes
+Rajasthan	Night	4592	3.6	Yes
+Rajasthan	Night	6933	2.3	Yes
+Rajasthan	Night	6423	2.2	Yes
+Rajasthan	Night	4696	2.3	Yes
+Rajasthan	Night	6153	3.6	Yes
+Rajasthan	Night	7208	3.6	Yes
+Rajasthan	Night	4203	3.1	Yes
+Rajasthan	Night	6774	2.2	Yes
+Rajasthan	Night	5398	3.9	Yes
+Rajasthan	Night	4886	3	Yes
+Rajasthan	Night	6370	2.6	Yes
+Rajasthan	Night	6635	2.2	Yes
+Rajasthan	Night	5646	3.3	Yes
+Rajasthan	Night	5478	2.2	Yes
+Rajasthan	Night	6597	2.9	Yes
+Rajasthan	Night	3976	3.5	Yes
+Rajasthan	Night	3546	4.5	Yes
+Rajasthan	Night	3814	3.3	Yes
+Rajasthan	Night	3057	3.1	Yes
+Rajasthan	Night	5614	3.8	Yes
+Rajasthan	Night	4575	2.8	Yes
+Rajasthan	Night	4263	3.2	Yes
+Rajasthan	Night	4279	2.6	Yes
+Rajasthan	Night	3832	3.2	Yes
+Rajasthan	Night	2689	2.5	Yes
+Rajasthan	Night	1531	3.2	Yes
+Rajasthan	Night	5004	4.6	Yes
+Rajasthan	Night	5017	2.9	Yes
+Rajasthan	Night	3071	2.9	Yes
+Rajasthan	Night	5961	4.3	Yes
+Rajasthan	Night	2545	2.6	Yes
+Rajasthan	Night	5154	4.7	Yes
+Rajasthan	Night	4804	4.9	Yes
+Rajasthan	Night	3298	3.1	Yes
+Rajasthan	Night	3498	4.1	Yes
+Rajasthan	Night	2043	4.5	Yes
+Rajasthan	Night	3989	3.1	Yes
+Rajasthan	Night	1863	4.4	Yes
+Rajasthan	Night	3526	4.8	Yes
+Rajasthan	Night	1724	4.8	Yes
+Rajasthan	Night	2592	3.7	Yes
+Rajasthan	Night	3991	4.7	Yes
+Rajasthan	Night	1741	4.7	Yes
+Rajasthan	Night	2243	3.2	Yes
+Rajasthan	Night	5003	4.5	Yes
+Rajasthan	Night	3646	4.5	Yes
+Rajasthan	Night	1684	4.2	Yes
+Rajasthan	Night	2998	2.7	Yes
+Rajasthan	Night	5087	4.2	Yes
+Rajasthan	Night	1706	3.8	Yes
+Rajasthan	Night	4556	4.6	Yes
+Rajasthan	Night	2145	4.4	Yes
+Rajasthan	Night	5417	3.4	Yes
+Rajasthan	Night	5312	4.5	Yes
+Rajasthan	Night	4877	2.7	Yes
+Rajasthan	Night	6993	2.6	Yes
+Rajasthan	Day	7705	6.4	Yes
+Rajasthan	Day	8935	7.1	Yes
+Rajasthan	Day	2063	2.9	Yes
+Rajasthan	Day	4966	3.7	Yes
+Rajasthan	Day	6745	3.7	Yes
+Rajasthan	Day	6345	3.1	Yes
+Rajasthan	Day	7944	5.5	Yes
+Rajasthan	Day	4285	1.7	Yes
+Rajasthan	Day	6422	5.1	Yes
+Rajasthan	Day	5088	7.5	Yes
+Rajasthan	Day	3363	7.2	Yes
+Rajasthan	Day	7969	2.5	Yes
+Rajasthan	Day	5876	5.7	Yes
+Rajasthan	Day	8104	5.2	Yes
+Rajasthan	Day	5772	6	Yes
+Rajasthan	Day	8716	2.1	Yes
+Rajasthan	Day	2060	7.6	Yes
+Rajasthan	Day	2305	5.3	Yes
+Rajasthan	Day	4489	4.6	Yes
+Rajasthan	Day	7380	6.2	Yes
+Rajasthan	Day	8262	7.9	Yes
+Rajasthan	Day	7126	4.2	Yes
+Rajasthan	Day	2955	6.2	Yes
+Rajasthan	Day	4663	2.4	Yes
+Rajasthan	Day	8979	5.4	Yes
+Rajasthan	Day	3897	1.7	Yes
+Rajasthan	Day	1502	7.6	Yes
+Rajasthan	Day	8444	1.7	Yes
+Sikkim	Night	102	22.6	Yes
+Tamil Nadu	Night	24356	1	Yes
+Tamil Nadu	Night	11269	1.5	Yes
+Tamil Nadu	Night	13486	1.2	Yes
+Tamil Nadu	Night	9777	1.8	Yes
+Tamil Nadu	Night	8551	2	Yes
+Tamil Nadu	Night	7123	2.5	Yes
+Tamil Nadu	Night	5999	2.8	Yes
+Tamil Nadu	Day	7532	2.3	Yes
+Tamil Nadu	Day	5510	3	Yes
+Telangana	Night	18349	1.2	Yes
+Telangana	Night	9557	1.8	Yes
+Telangana	Night	6893	2.3	Yes
+Telangana	Night	7238	2.5	Yes
+Telangana	Night	8245	2	Yes
+Telangana	Night	5576	3	Yes
+Telangana	Night	6312	2.7	Yes
+Telangana	Night	4791	3.5	Yes
+Telangana	Night	7211	2.4	Yes
+Telangana	Night	6321	2.8	Yes
+Telangana	Night	13872	1.6	Yes
+Telangana	Night	9123	2.4	Yes
+Telangana	Day	17651	1.7	Yes
+Telangana	Day	12136	1.9	Yes
+Telangana	Day	5921	2.2	Yes
+Telangana	Day	3262	7.9	Yes
+Telangana	Day	7123	4.8	Yes
+Tripura	Night	12186	1.3	Yes
+Tripura	Night	6421	3	Yes
+Tripura	Night	3611	3.2	Yes
+Uttar Pradesh	Night	14450	1.2	Yes
+Uttar Pradesh	Night	12417	2.6	Yes
+Uttar Pradesh	Night	14528	2.4	Yes
+Uttar Pradesh	Night	14054	2.4	Yes
+Uttar Pradesh	Night	14255	1.5	Yes
+Uttar Pradesh	Night	11370	2.1	Yes
+Uttar Pradesh	Night	14015	1.2	Yes
+Uttar Pradesh	Night	12009	1.9	Yes
+Uttar Pradesh	Night	14685	1.2	Yes
+Uttar Pradesh	Night	11088	1.6	Yes
+Uttar Pradesh	Night	9130	2.1	Yes
+Uttar Pradesh	Night	11117	2.9	Yes
+Uttar Pradesh	Night	9856	1.4	Yes
+Uttar Pradesh	Night	11729	1.3	Yes
+Uttar Pradesh	Night	9462	1.4	Yes
+Uttar Pradesh	Night	12155	2	Yes
+Uttar Pradesh	Night	12015	2.8	Yes
+Uttar Pradesh	Night	11379	1.7	Yes
+Uttar Pradesh	Night	12718	2.9	Yes
+Uttar Pradesh	Night	12175	1.5	Yes
+Uttar Pradesh	Night	9830	1.8	Yes
+Uttar Pradesh	Night	9438	1.9	Yes
+Uttar Pradesh	Night	8228	1.7	Yes
+Uttar Pradesh	Night	8827	2.6	Yes
+Uttar Pradesh	Night	8932	1.7	Yes
+Uttar Pradesh	Night	8101	1.8	Yes
+Uttar Pradesh	Night	9595	1.7	Yes
+Uttar Pradesh	Night	10221	1.6	Yes
+Uttar Pradesh	Night	10226	2.7	Yes
+Uttar Pradesh	Night	9049	2	Yes
+Uttar Pradesh	Night	8534	2.7	Yes
+Uttar Pradesh	Night	9081	1.8	Yes
+Uttar Pradesh	Night	8860	2.1	Yes
+Uttar Pradesh	Night	9662	1.8	Yes
+Uttar Pradesh	Night	8253	2.4	Yes
+Uttar Pradesh	Night	8572	2.4	Yes
+Uttar Pradesh	Night	9924	2.2	Yes
+Uttar Pradesh	Night	8396	2.1	Yes
+Uttar Pradesh	Night	8999	2.6	Yes
+Uttar Pradesh	Night	8270	1.9	Yes
+Uttar Pradesh	Night	9946	1.3	Yes
+Uttar Pradesh	Night	10146	2.1	Yes
+Uttar Pradesh	Night	12614	2	Yes
+Uttar Pradesh	Night	10480	1.9	Yes
+Uttar Pradesh	Night	10899	2.1	Yes
+Uttar Pradesh	Night	10249	1.3	Yes
+Uttar Pradesh	Night	10977	1.3	Yes
+Uttar Pradesh	Night	11501	1.2	Yes
+Uttar Pradesh	Night	12890	1.7	Yes
+Uttar Pradesh	Night	10000	1.5	Yes
+Uttar Pradesh	Night	9070	1.9	Yes
+Uttar Pradesh	Night	9084	2.6	Yes
+Uttar Pradesh	Night	8900	2	Yes
+Uttar Pradesh	Night	9665	3.1	Yes
+Uttar Pradesh	Night	7642	2.2	Yes
+Uttar Pradesh	Night	7821	1.9	Yes
+Uttar Pradesh	Night	8991	2.5	Yes
+Uttar Pradesh	Night	9669	2.3	Yes
+Uttar Pradesh	Night	7999	2.1	Yes
+Uttar Pradesh	Night	9029	2.8	Yes
+Uttar Pradesh	Night	8077	1.7	Yes
+Uttar Pradesh	Night	8832	2.2	Yes
+Uttar Pradesh	Night	8757	1.9	Yes
+Uttar Pradesh	Night	8249	1.6	Yes
+Uttar Pradesh	Night	8600	1.8	Yes
+Uttar Pradesh	Night	9289	2	Yes
+Uttar Pradesh	Night	9310	1.4	Yes
+Uttar Pradesh	Night	9059	1.8	Yes
+Uttar Pradesh	Night	8676	1.5	Yes
+Uttar Pradesh	Night	8405	1.9	Yes
+Uttar Pradesh	Night	10023	2.4	Yes
+Uttar Pradesh	Night	9467	2.3	Yes
+Uttar Pradesh	Night	9554	2.2	Yes
+Uttar Pradesh	Night	9876	2.5	Yes
+Uttar Pradesh	Night	9710	2.5	Yes
+Uttar Pradesh	Night	9288	2	Yes
+Uttar Pradesh	Night	10201	2.5	Yes
+Uttar Pradesh	Night	10470	2	Yes
+Uttar Pradesh	Night	7691	3.4	Yes
+Uttar Pradesh	Night	7487	2.8	Yes
+Uttar Pradesh	Night	6550	3	Yes
+Uttar Pradesh	Night	7932	3.4	Yes
+Uttar Pradesh	Night	7485	3.1	Yes
+Uttar Pradesh	Night	6379	2.7	Yes
+Uttar Pradesh	Night	8377	3.3	Yes
+Uttar Pradesh	Night	6867	3	Yes
+Uttar Pradesh	Night	6548	3.3	Yes
+Uttar Pradesh	Night	6805	3	Yes
+Uttar Pradesh	Night	5638	3	Yes
+Uttar Pradesh	Night	6533	3.8	Yes
+Uttar Pradesh	Night	6342	3.5	Yes
+Uttar Pradesh	Night	7104	3.5	Yes
+Uttar Pradesh	Night	6267	3.2	Yes
+Uttar Pradesh	Night	10288	2.2	Yes
+Uttar Pradesh	Night	9952	2.2	Yes
+Uttar Pradesh	Night	10088	2.4	Yes
+Uttar Pradesh	Night	10260	2.1	Yes
+Uttar Pradesh	Night	10957	2.9	Yes
+Uttar Pradesh	Night	9900	3.3	Yes
+Uttar Pradesh	Night	10493	2.2	Yes
+Uttar Pradesh	Night	10711	1.5	Yes
+Uttar Pradesh	Day	9420	2.3	Yes
+Uttar Pradesh	Day	9475	1.7	Yes
+Uttar Pradesh	Day	10488	2.2	Yes
+Uttar Pradesh	Day	8871	3.3	Yes
+Uttar Pradesh	Day	11117	1.6	Yes
+Uttar Pradesh	Day	9161	2.9	Yes
+Uttar Pradesh	Day	9605	2.4	Yes
+Uttar Pradesh	Day	10942	4.3	Yes
+Uttar Pradesh	Day	5625	5	Yes
+Uttar Pradesh	Day	6522	3.5	Yes
+Uttar Pradesh	Day	7674	3.5	Yes
+Uttar Pradesh	Day	7337	3.6	Yes
+Uttar Pradesh	Day	5418	4.2	Yes
+Uttar Pradesh	Day	6481	2.3	Yes
+Uttar Pradesh	Day	6115	2.4	Yes
+Uttar Pradesh	Day	5765	3.1	Yes
+Uttar Pradesh	Day	5993	3.6	Yes
+Uttar Pradesh	Day	7634	2	Yes
+Uttar Pradesh	Day	5765	3.8	Yes
+Uttar Pradesh	Day	7661	2.9	Yes
+Uttar Pradesh	Day	5819	3.2	Yes
+Uttar Pradesh	Day	7495	4.9	Yes
+Uttar Pradesh	Day	6912	2.1	Yes
+Uttar Pradesh	Day	6916	2.3	Yes
+Uttarakhand	Night	9123	1.5	Yes
+Uttarakhand	Night	8246	2	Yes
+Uttarakhand	Night	7512	2.3	Yes
+Uttarakhand	Night	6969	2	Yes
+Uttarakhand	Night	7354	1.8	Yes
+Uttarakhand	Night	6423	2.1	Yes
+Uttarakhand	Night	5921	2.5	Yes
+Uttarakhand	Night	4436	3	Yes
+Uttarakhand	Night	4139	3.2	Yes
+Uttarakhand	Day	3891	3.5	Yes
+Uttarakhand	Day	3745	4.5	Yes
+Uttarakhand	Day	2369	4.2	Yes
+Uttarakhand	Day	7562	1.3	Yes
+West Bengal	Night	19117	0.9	Yes
+West Bengal	Night	22305	1	Yes
+West Bengal	Night	22761	1.3	Yes
+West Bengal	Night	22550	1.2	Yes
+West Bengal	Night	15637	1.5	Yes
+West Bengal	Night	17537	1.7	Yes
+West Bengal	Night	12872	1.7	Yes
+West Bengal	Night	13124	1.8	Yes
+West Bengal	Night	11275	1.9	Yes
+West Bengal	Night	11419	1.7	Yes
+West Bengal	Night	12398	2.2	Yes
+West Bengal	Night	12800	1.7	Yes
+West Bengal	Night	9548	3.4	Yes
+West Bengal	Night	9045	2.4	Yes
+West Bengal	Night	5701	2.5	Yes
+West Bengal	Night	5265	2.5	Yes
+West Bengal	Night	5993	2.7	Yes
+West Bengal	Night	9381	2.9	Yes
+West Bengal	Night	6139	2.4	Yes
+West Bengal	Night	9814	3.1	Yes
+West Bengal	Night	9841	2.5	Yes
+West Bengal	Night	8426	2.7	Yes
+West Bengal	Night	6451	3.2	Yes
+West Bengal	Day	9112	3.1	Yes
+West Bengal	Day	8595	2.5	Yes
+West Bengal	Day	8559	4.2	Yes
+West Bengal	Day	8649	2.8	Yes
+West Bengal	Day	9193	3.4	Yes
+West Bengal	Day	11517	1.7	Yes
+West Bengal	Day	8513	3	Yes
+West Bengal	Day	10639	3.2	Yes
+West Bengal	Day	10053	2.6	Yes
+Andaman & Nicobar Islands	Night	1326	2.3	Yes
+Chandigarh	Night	9369	4.9	Yes
+Chandigarh	Night	3233	1.5	Yes
+Dadra and Nagar Haveli	Night	3529	3.1	Yes
+Daman and Diu	Night	2123	2.4	Yes
+Delhi	Night	10424	1.7	Yes
+Delhi	Night	21530	1.3	Yes
+Delhi	Night	21307	2.8	Yes
+Delhi	Night	19195	1.7	Yes
+Delhi	Night	12756	2.1	Yes
+Delhi	Night	20319	1.5	Yes
+Delhi	Night	12084	2.4	Yes
+Delhi	Night	8123	2.9	Yes
+Delhi	Night	13865	2.8	Yes
+Delhi	Night	19814	1.9	Yes
+Delhi	Night	16333	2.5	Yes
+Delhi	Night	7419	2.2	Yes
+Delhi	Night	21742	1.3	Yes
+Delhi	Night	18678	2.3	Yes
+Delhi	Night	10360	2.6	Yes
+Delhi	Night	7621	2.9	Yes
+Delhi	Night	13324	1.9	Yes
+Delhi	Night	17435	2.7	Yes
+Delhi	Night	12662	1.2	Yes
+Delhi	Night	12807	1.9	Yes
+Delhi	Night	14368	1.7	Yes
+Delhi	Night	20543	1.4	Yes
+Delhi	Night	15031	1.5	Yes
+Delhi	Night	13618	1.6	Yes
+Delhi	Night	23683	1.7	Yes
+Delhi	Day	16421	2.4	Yes
+Delhi	Day	5521	2.9	Yes
+Delhi	Day	21578	1.8	Yes
+Delhi	Day	11808	1.5	Yes
+Delhi	Day	19638	3	Yes
+Delhi	Day	20581	1.6	Yes
+Delhi	Day	19385	1	Yes
+Delhi	Day	6321	2.8	Yes
+Delhi	Day	24120	2.6	Yes
+Delhi	Day	20752	1.1	Yes
+Delhi	Day	23409	0.7	Yes
+Delhi	Day	13654	1.2	Yes
+Lakshadweep	Night	4169	3.2	Yes
+Puducherry	Night	5693	1.7	Yes
+Delhi	Day	26916	0.2	No
+Delhi	Day	17009	1.3	No
+Delhi	Day	24793	1.5	No
+Delhi	Day	10422	0.6	No
+Delhi	Day	21454	1.7	No
+Delhi	Day	20171	0.4	No
+Delhi	Day	16423	1.9	No
+Delhi	Day	20417	0.4	No
+Delhi	Day	22735	0.7	No
+Delhi	Day	19414	0.5	No
+Delhi	Day	12909	1.6	No
+Delhi	Day	26266	1.5	No
+Delhi	Day	14304	0.1	No
+Delhi	Day	24157	1.6	No
+Delhi	Day	23912	0.8	No
+Delhi	Day	10568	2.1	No
+Delhi	Day	16457	0.1	No
+Delhi	Day	24288	0.1	No
+Delhi	Day	19096	1.7	No
+Delhi	Day	11743	1.8	No
+Delhi	Day	17322	0.6	No
+Delhi	Night	9993	0.8	No
+Delhi	Night	8733	1.1	No
+Delhi	Night	8603	0.5	No
+Delhi	Night	10788	0.2	No
+Delhi	Night	10890	0.2	No
+Delhi	Night	8058	1.2	No
+Delhi	Night	8310	0.8	No
+Delhi	Night	11577	0.2	No
+Delhi	Night	13020	2.1	No
+Delhi	Night	8270	0.6	No
+Puducherry	Night	7264	1.3	No
+Puducherry	Day	5499	2.2	No
+Lakshadweep	Night 	2689	1.2	No
+Lakshadweep	Day	4211	2.1	No
+Daman and Diu	Day	2345	2.3	No
+Daman and Diu	Night	1235	1.5	No
+Chandigarh	Day	3256	0.6	No
+Chandigarh	Day	5931	1.8	No
+Chandigarh	Night	6123	0.5	No
+Chandigarh	Night	4231	0.6	No
+Andaman & Nicobar Islands	Day	5164	2.3	No
+Andaman & Nicobar Islands	Night	3216	1.1	No
+West Bengal	Day	11122	0.4	No
+West Bengal	Day	12081	1	No
+West Bengal	Day	10722	0.6	No
+West Bengal	Day	12867	0.6	No
+West Bengal	Day	8226	1.1	No
+West Bengal	Day	13130	1.2	No
+West Bengal	Day	10667	1	No
+West Bengal	Day	8084	1.4	No
+West Bengal	Day	10030	0.7	No
+West Bengal	Day	8292	1	No
+West Bengal	Day	13688	1.4	No
+West Bengal	Day	12420	0.8	No
+West Bengal	Day	12056	0.4	No
+West Bengal	Day	10799	1.2	No
+West Bengal	Night	13374	0.8	No
+West Bengal	Night	11036	1.1	No
+West Bengal	Night	13501	0.6	No
+West Bengal	Night	10101	0.6	No
+West Bengal	Night	11454	1.2	No
+West Bengal	Night	9230	1.7	No
+Uttarakhand	Day	5285	1.1	No
+Uttarakhand	Day	6961	1.1	No
+Uttarakhand	Day	6251	0.8	No
+Uttarakhand	Day	3630	0.9	No
+Uttarakhand	Day	6629	1.4	No
+Uttarakhand	Night	5463	0.6	No
+Uttarakhand	Night	6065	0.6	No
+Uttarakhand	Night	6725	0.6	No
+Uttarakhand	Night	6776	1	No
+Uttarakhand	Night	3146	1	No
+Uttar Pradesh	Day	9881	0.9	No
+Uttar Pradesh	Day	11057	1.6	No
+Uttar Pradesh	Day	9780	1.5	No
+Uttar Pradesh	Day	8254	1.4	No
+Uttar Pradesh	Day	9707	0.6	No
+Uttar Pradesh	Day	9814	0.6	No
+Uttar Pradesh	Day	9622	0.7	No
+Uttar Pradesh	Day	8067	0.9	No
+Uttar Pradesh	Day	8833	0.6	No
+Uttar Pradesh	Day	10847	1.7	No
+Uttar Pradesh	Day	8265	1	No
+Uttar Pradesh	Day	8024	1.1	No
+Uttar Pradesh	Day	8907	1	No
+Uttar Pradesh	Day	10755	1.2	No
+Uttar Pradesh	Day	11327	1.7	No
+Uttar Pradesh	Day	10974	0.7	No
+Uttar Pradesh	Day	8661	2.1	No
+Uttar Pradesh	Day	8124	1.5	No
+Uttar Pradesh	Day	9218	1.5	No
+Uttar Pradesh	Day	11755	1.3	No
+Uttar Pradesh	Night	9906	0.9	No
+Uttar Pradesh	Night	9842	2.1	No
+Uttar Pradesh	Night	8362	0.8	No
+Uttar Pradesh	Night	8585	1.7	No
+Uttar Pradesh	Night	11922	1.1	No
+Uttar Pradesh	Night	11631	1.4	No
+Uttar Pradesh	Night	11562	1	No
+Uttar Pradesh	Night	9291	1.5	No
+Uttar Pradesh	Night	11665	1.6	No
+Uttar Pradesh	Night	8014	2	No
+Uttar Pradesh	Night	8651	1	No
+Uttar Pradesh	Night	11078	1.9	No
+Uttar Pradesh	Night	10373	1	No
+Uttar Pradesh	Night	8793	1.8	No
+Uttar Pradesh	Night	10551	1.1	No
+Uttar Pradesh	Night	8043	1.6	No
+Uttar Pradesh	Night	10960	1.1	No
+Uttar Pradesh	Night	11578	1.7	No
+Uttar Pradesh	Night	10006	0.7	No
+Uttar Pradesh	Night	9370	0.8	No
+Uttar Pradesh	Night	8764	0.9	No
+Uttar Pradesh	Night	10213	1.8	No
+Uttar Pradesh	Night	8620	0.7	No
+Tripura	Day	6498	1.3	No
+Tripura	Day	8651	3	No
+Tripura	Night	4265	0.7	No
+Telangana	Day	8029	0.9	No
+Telangana	Day	8860	1.8	No
+Telangana	Day	10033	1.5	No
+Telangana	Day	6705	1.7	No
+Telangana	Day	8719	0.7	No
+Telangana	Day	7571	1.4	No
+Telangana	Day	6259	2.3	No
+Telangana	Day	9033	1.2	No
+Telangana	Day	6975	1.6	No
+Telangana	Night	11244	2.2	No
+Telangana	Night	7589	1.1	No
+Telangana	Night	8740	1.6	No
+Telangana	Night	9130	1.1	No
+Tamil Nadu	Night	7420	1.3	No
+Tamil Nadu	Night	9062	0.8	No
+Tamil Nadu	Night	9924	1.1	No
+Tamil Nadu	Day	7552	1.8	No
+Tamil Nadu	Day	7794	1.7	No
+Tamil Nadu	Day	9579	1.7	No
+Tamil Nadu	Day	9034	1.8	No
+Sikkim	Night	213	13.6	No
+Rajasthan	Day	6040	1.5	No
+Rajasthan	Day	6208	1.1	No
+Rajasthan	Day	5351	1.2	No
+Rajasthan	Day	6628	1.7	No
+Rajasthan	Day	6026	1.8	No
+Rajasthan	Day	6528	1.8	No
+Rajasthan	Day	6626	1.7	No
+Rajasthan	Day	6585	0.8	No
+Rajasthan	Day	5079	1.9	No
+Rajasthan	Day	6561	1.1	No
+Rajasthan	Day	6406	1.4	No
+Rajasthan	Day	5750	1.9	No
+Rajasthan	Day	6770	1.4	No
+Rajasthan	Day	6972	0.9	No
+Rajasthan	Day	6717	1.6	No
+Rajasthan	Day	5078	1.5	No
+Rajasthan	Day	5768	1.1	No
+Rajasthan	Day	6498	1	No
+Rajasthan	Day	6884	0.8	No
+Rajasthan	Day	6034	1	No
+Rajasthan	Day	6611	0.8	No
+Rajasthan	Day	5765	1.2	No
+Rajasthan	Day	6098	0.8	No
+Rajasthan	Day	6094	1.6	No
+Rajasthan	Day	5895	1	No
+Rajasthan	Day	6999	1.5	No
+Rajasthan	Night	6993	1.7	No
+Rajasthan	Night	6118	1.3	No
+Rajasthan	Night	5523	1.5	No
+Rajasthan	Night	5946	1.2	No
+Rajasthan	Night	6085	1.9	No
+Rajasthan	Night	6048	1.9	No
+Rajasthan	Night	6788	0.7	No
+Rajasthan	Night	5838	1.6	No
+Rajasthan	Night	5603	0.9	No
+Rajasthan	Night	6723	1.4	No
+Rajasthan	Night	6222	1.8	No
+Rajasthan	Night	6456	1.7	No
+Rajasthan	Night	6571	1.1	No
+Rajasthan	Night	6942	1.1	No
+Rajasthan	Night	6456	1.1	No
+Rajasthan	Night	6010	1.3	No
+Rajasthan	Night	6074	0.9	No
+Rajasthan	Night	6280	1.8	No
+Rajasthan	Night	6476	1.1	No
+Rajasthan	Night	6534	1	No
+Rajasthan	Night	6072	1.3	No
+Rajasthan	Night	6371	1.4	No
+Rajasthan	Night	5902	1	No
+Rajasthan	Night	5455	1.7	No
+Rajasthan	Night	6292	0.8	No
+Rajasthan	Night	6017	1.6	No
+Rajasthan	Night	5162	0.8	No
+Rajasthan	Night	6657	1	No
+Rajasthan	Night	5875	1	No
+Rajasthan	Night	5221	1.6	No
+Punjab	Night	6320	1.8	No
+Punjab	Night	7994	0.6	No
+Punjab	Night	8448	1.3	No
+Punjab	Night	5914	0.7	No
+Punjab	Night	8855	3	No
+Punjab	Night	7030	1.1	No
+Punjab	Night	7238	2	No
+Punjab	Day	7219	2.5	No
+Punjab	Day	8585	2.1	No
+Punjab	Day	5982	1.4	No
+Punjab	Day	7198	2	No
+Punjab	Day	6342	2.8	No
+Punjab	Day	6788	2.8	No
+Punjab	Day	7702	2.9	No
+Punjab	Day	7312	1.1	No
+Odisha	Night	5994	1.8	No
+Odisha	Night	3174	0.7	No
+Odisha	Night	4482	1.9	No
+Odisha	Night	6184	1	No
+Odisha	Night	2884	1.4	No
+Odisha	Night	5430	1	No
+Odisha	Night	6007	0.7	No
+Odisha	Night	5049	0.9	No
+Odisha	Night	4127	0.6	No
+Odisha	Night	4791	1.4	No
+Odisha	Night	5280	0.7	No
+Odisha	Night	6109	1.4	No
+Odisha	Night	4067	0.6	No
+Odisha	Day	5671	0.8	No
+Odisha	Day	5786	1.6	No
+Odisha	Day	6310	0.8	No
+Odisha	Day	5751	0.9	No
+Odisha	Day	5633	1.8	No
+Odisha	Day	5296	1.9	No
+Odisha	Day	4327	1.6	No
+Odisha	Day	6725	1.1	No
+Odisha	Day	4487	0.6	No
+Odisha	Day	3796	1.1	No
+Odisha	Day	5487	1.8	No
+Odisha	Day	4235	0.7	No
+Odisha	Day	4087	1.6	No
+Odisha	Day	2102	2.4	No
+Manipur	Night	159	4.2	No
+Manipur	Day	111	7.3	No
+Meghalaya	Night	176	3.9	No
+Meghalaya	Day	102	5.8	No
+Meghalaya	Day	256	11.3	No
+Mizoram	Night	389	1.7	No
+Nagaland	Night	625	1.9	No
+Maharashtra	Night	16782	1.1	No
+Maharashtra	Night	16431	1.7	No
+Maharashtra	Night	9017	1.8	No
+Maharashtra	Night	10669	1.1	No
+Maharashtra	Night	13960	2.7	No
+Maharashtra	Night	10015	0.5	No
+Maharashtra	Night	10088	0.8	No
+Maharashtra	Night	16625	1.3	No
+Maharashtra	Night	12341	2.7	No
+Maharashtra	Night	19038	0.5	No
+Maharashtra	Night	9040	2.2	No
+Maharashtra	Night	13193	0.8	No
+Maharashtra	Night	14680	2	No
+Maharashtra	Day	16555	1.8	No
+Maharashtra	Day	17367	2.1	No
+Maharashtra	Day	20339	2.4	No
+Maharashtra	Day	10270	2.1	No
+Maharashtra	Day	12954	2	No
+Maharashtra	Day	16319	2.9	No
+Maharashtra	Day	16010	1.8	No
+Maharashtra	Day	14171	1.5	No
+Maharashtra	Day	20092	2.3	No
+Maharashtra	Day	17452	0.5	No
+Maharashtra	Day	17934	1.3	No
+Maharashtra	Day	13928	0.9	No
+Maharashtra	Day	13589	2.9	No
+Maharashtra	Day	13688	0.9	No
+Maharashtra	Day	11171	0.6	No
+Maharashtra	Day	20880	1.1	No
+Maharashtra	Day	18506	2.1	No
+Maharashtra	Day	17524	2	No
+Maharashtra	Day	17357	1.4	No
+Maharashtra	Day	16927	0.7	No
+Maharashtra	Day	13591	0.8	No
+Maharashtra	Day	9098	0.8	No
+Maharashtra	Day	17187	2.9	No
+Maharashtra	Day	20361	2.1	No
+Maharashtra	Day	14139	0.7	No
+Maharashtra	Day	16244	2.4	No
+Maharashtra	Day	9893	1.4	No
+Maharashtra	Day	21459	4.5	No
+Madhya Pradesh	Night	772	3.4	No
+Madhya Pradesh	Night	565	3.7	No
+Madhya Pradesh	Night	1551	2.6	No
+Madhya Pradesh	Night	781	2	No
+Madhya Pradesh	Night	1916	3.2	No
+Madhya Pradesh	Night	1694	2.1	No
+Madhya Pradesh	Night	1221	3.8	No
+Madhya Pradesh	Night	634	3.7	No
+Madhya Pradesh	Night	1763	3.2	No
+Madhya Pradesh	Night	1516	2.3	No
+Madhya Pradesh	Night	1749	5	No
+Madhya Pradesh	Night	1778	3.8	No
+Madhya Pradesh	Night	1402	4.7	No
+Madhya Pradesh	Night	1382	2.5	No
+Madhya Pradesh	Night	1319	3.7	No
+Madhya Pradesh	Night	1185	3.4	No
+Madhya Pradesh	Night	1729	2.3	No
+Madhya Pradesh	Night	844	4.5	No
+Madhya Pradesh	Night	750	5	No
+Madhya Pradesh	Night	1276	2.2	No
+Madhya Pradesh	Night	1269	3.1	No
+Madhya Pradesh	Night	1465	4.1	No
+Madhya Pradesh	Night	552	3.2	No
+Madhya Pradesh	Night	1167	3.4	No
+Madhya Pradesh	Night	565	2.4	No
+Madhya Pradesh	Night	1983	4.9	No
+Madhya Pradesh	Night	1631	2.3	No
+Madhya Pradesh	Night	596	4.4	No
+Madhya Pradesh	Night	1252	3.4	No
+Madhya Pradesh	Night	1580	3.2	No
+Madhya Pradesh	Night	1055	4.4	No
+Madhya Pradesh	Night	1588	3.3	No
+Madhya Pradesh	Night	1654	4	No
+Madhya Pradesh	Night	1337	4.8	No
+Madhya Pradesh	Night	1929	2.7	No
+Madhya Pradesh	Night	603	2.9	No
+Madhya Pradesh	Night	1121	4.1	No
+Madhya Pradesh	Night	1338	3.4	No
+Madhya Pradesh	Night	1514	2.5	No
+Madhya Pradesh	Night	714	2	No
+Madhya Pradesh	Night	1053	3.7	No
+Madhya Pradesh	Night	1979	4.1	No
+Madhya Pradesh	Night	996	2	No
+Madhya Pradesh	Night	866	4.3	No
+Madhya Pradesh	Night	1420	2.7	No
+Madhya Pradesh	Night	550	2.1	No
+Madhya Pradesh	Night	1708	3.2	No
+Madhya Pradesh	Night	649	4	No
+Madhya Pradesh	Night	621	4.8	No
+Madhya Pradesh	Night	1833	3.5	No
+Madhya Pradesh	Night	1440	4.6	No
+Madhya Pradesh	Night	1593	4.8	No
+Madhya Pradesh	Night	1694	3	No
+Madhya Pradesh	Night	759	2.8	No
+Madhya Pradesh	Night	973	3.3	No
+Madhya Pradesh	Night	1164	2.4	No
+Madhya Pradesh	Night	932	4.8	No
+Madhya Pradesh	Night	515	4.6	No
+Madhya Pradesh	Night	1224	5	No
+Madhya Pradesh	Night	926	4.6	No
+Madhya Pradesh	Night	1501	3.1	No
+Madhya Pradesh	Night	580	2.3	No
+Madhya Pradesh	Day	1118	3.5	No
+Madhya Pradesh	Day	1640	4.5	No
+Madhya Pradesh	Day	1751	3.5	No
+Madhya Pradesh	Day	1282	3.4	No
+Madhya Pradesh	Day	990	3.1	No
+Madhya Pradesh	Day	542	3.4	No
+Madhya Pradesh	Day	1029	3.6	No
+Madhya Pradesh	Day	538	4.9	No
+Madhya Pradesh	Day	1930	4.6	No
+Madhya Pradesh	Day	1497	2.9	No
+Madhya Pradesh	Day	1831	3.4	No
+Madhya Pradesh	Day	1492	3.7	No
+Madhya Pradesh	Day	1418	3.3	No
+Madhya Pradesh	Day	1597	4	No
+Madhya Pradesh	Day	1738	4.5	No
+Madhya Pradesh	Day	615	3.2	No
+Madhya Pradesh	Day	593	4	No
+Madhya Pradesh	Day	1312	3.9	No
+Madhya Pradesh	Day	1607	3.8	No
+Madhya Pradesh	Day	678	4.2	No
+Madhya Pradesh	Day	1021	3.2	No
+Madhya Pradesh	Day	979	3.8	No
+Madhya Pradesh	Day	1314	2.7	No
+Madhya Pradesh	Day	790	4.5	No
+Madhya Pradesh	Day	1749	4.2	No
+Madhya Pradesh	Day	1800	3.3	No
+Madhya Pradesh	Day	1663	2.7	No
+Madhya Pradesh	Day	1855	4.9	No
+Madhya Pradesh	Day	1621	2.6	No
+Madhya Pradesh	Day	1200	2.8	No
+Madhya Pradesh	Day	1464	2	No
+Madhya Pradesh	Day	1815	2.5	No
+Madhya Pradesh	Day	1429	2.2	No
+Madhya Pradesh	Day	720	4.5	No
+Madhya Pradesh	Day	1997	2.1	No
+Madhya Pradesh	Day	661	2.2	No
+Madhya Pradesh	Day	1419	4.3	No
+Madhya Pradesh	Day	1228	4.3	No
+Madhya Pradesh	Day	645	2.4	No
+Madhya Pradesh	Day	963	2.6	No
+Madhya Pradesh	Day	609	4.6	No
+Madhya Pradesh	Day	1522	4.2	No
+Madhya Pradesh	Day	1451	2.9	No
+Madhya Pradesh	Day	554	2.4	No
+Madhya Pradesh	Day	471	5.1	No
+Madhya Pradesh	Day	591	6.2	No
+Kerala	Night	5728	2.2	No
+Kerala	Night	3201	2.4	No
+Kerala	Night	5757	1.8	No
+Kerala	Night	3543	2.2	No
+Kerala	Night	4570	2.7	No
+Kerala	Night	3498	1.9	No
+Kerala	Night	5150	2.2	No
+Kerala	Night	4684	3.2	No
+Kerala	Night	5903	3.1	No
+Kerala	Night	5530	2.8	No
+Kerala	Night	4419	3.8	No
+Kerala	Night	5790	1.5	No
+Kerala	Night	3200	3.5	No
+Kerala	Night	4059	2.2	No
+Kerala	Night	5387	3.2	No
+Kerala	Night	4195	2.1	No
+Kerala	Night	5971	3.8	No
+Kerala	Night	4888	2.4	No
+Kerala	Day	5818	3.4	No
+Kerala	Day	5848	2.3	No
+Kerala	Day	3901	1.6	No
+Kerala	Day	5252	3.1	No
+Kerala	Day	4301	4.1	No
+Kerala	Day	4321	4.2	No
+Kerala	Day	5868	4	No
+Kerala	Day	4696	4.5	No
+Kerala	Day	3413	3.9	No
+Kerala	Day	5611	2.4	No
+Kerala	Day	4680	4.1	No
+Kerala	Day	3249	1.7	No
+Kerala	Day	5285	3	No
+Kerala	Day	4000	2.1	No
+Karnataka	Night	9047	3.2	No
+Karnataka	Night	6646	3.8	No
+Karnataka	Night	10634	1.8	No
+Karnataka	Night	5723	3.7	No
+Karnataka	Night	6561	2.2	No
+Karnataka	Night	9179	3.2	No
+Karnataka	Day	6850	3.6	No
+Karnataka	Day	8507	1.8	No
+Karnataka	Day	6444	4.2	No
+Karnataka	Day	9343	1.4	No
+Karnataka	Day	5834	4.2	No
+Jharkhand	Day	4500	6	No
+Jharkhand	Day	4920	2.4	No
+Jharkhand	Day	4218	4.2	No
+Jharkhand	Day	3263	3.7	No
+Jharkhand	Day	5389	2.2	No
+Jharkhand	Day	4531	4.7	No
+Jharkhand	Day	5301	4.3	No
+Jharkhand	Day	3758	4.4	No
+Jharkhand	Night	4316	4.4	No
+Jharkhand	Night	3749	2.7	No
+Jharkhand	Night	4260	4.1	No
+Jharkhand	Night	4139	3.8	No
+Jharkhand	Night	4705	2.2	No
+Jharkhand	Night	3575	3.2	No
+Jammu & Kashmir	Night	2410	3.8	No
+Jammu & Kashmir	Night	2101	3.9	No
+Jammu & Kashmir	Night	1819	3.1	No
+Jammu & Kashmir	Night	1811	3.6	No
+Jammu & Kashmir	Day	2359	2.3	No
+Jammu & Kashmir	Day	2918	1.5	No
+Jammu & Kashmir	Day	2411	3.7	No
+Himachal Pradesh	Night	3239	3.9	No
+Himachal Pradesh	Night	2226	4	No
+Himachal Pradesh	Night	2775	4.8	No
+Himachal Pradesh	Night	2010	3	No
+Himachal Pradesh	Day	2771	5.2	No
+Himachal Pradesh	Day	2055	3.1	No
+Himachal Pradesh	Day	1507	4.2	No
+Haryana	Night	5000	6	No
+Haryana	Night	4800	7	No
+Haryana	Night	4900	6.5	No
+Haryana	Night	4600	7.5	No
+Haryana	Night	4200	7	No
+Haryana	Night	4000	7.5	No
+Haryana	Night	4500	7	No
+Haryana	Night	4100	8	No
+Haryana	Night	3800	8.5	No
+Haryana	Night	4000	8	No
+Haryana	Night	4700	7.5	No
+Haryana	Day	5606	3.2	No
+Haryana	Day	4373	3.9	No
+Haryana	Day	4224	6	No
+Haryana	Day	5728	4.1	No
+Haryana	Day	4074	5	No
+Haryana	Day	4457	6.4	No
+Haryana	Day	5608	4.5	No
+Haryana	Day	4354	3.9	No
+Haryana	Day	4552	5.8	No
+Gujarat	Night	10684	5.8	No
+Gujarat	Night	6164	5.7	No
+Gujarat	Night	9490	4.9	No
+Gujarat	Night	10287	5.6	No
+Gujarat	Night	8664	2.6	No
+Gujarat	Day	10010	3	No
+Gujarat	Day	7381	2.5	No
+Gujarat	Day	8615	4	No
+Gujarat	Day	7243	2.8	No
+Goa	Night	9700	2	No
+Goa	Day	11120	1.7	No
+Chhattisgarh	Night	5995	6.9	No
+Chhattisgarh	Night	4095	2.6	No
+Chhattisgarh	Night	5706	7.2	No
+Chhattisgarh	Night	5023	3.5	No
+Chhattisgarh	Night	3489	4	No
+Chhattisgarh	Night	5168	7.3	No
+Chhattisgarh	Night	5884	3.6	No
+Chhattisgarh	Night	4607	4.2	No
+Chhattisgarh	Night	4740	2.7	No
+Chhattisgarh	Night	3535	7.5	No
+Chhattisgarh	Night	3505	6.6	No
+Chhattisgarh	Night	4725	7.8	No
+Chhattisgarh	Night	3378	3.5	No
+Chhattisgarh	Night	5883	4.3	No
+Chhattisgarh	Night	5999	7.1	No
+Chhattisgarh	Night	5011	4.5	No
+Chhattisgarh	Night	3952	3.8	No
+Chhattisgarh	Night	5813	7.4	No
+Chhattisgarh	Night	3455	7.5	No
+Chhattisgarh	Night	4551	6.9	No
+Chhattisgarh	Night	3208	6.9	No
+Chhattisgarh	Night	4639	3.3	No
+Chhattisgarh	Day	4633	5.7	No
+Chhattisgarh	Day	5594	6.8	No
+Chhattisgarh	Day	4378	5.6	No
+Chhattisgarh	Day	4430	2.9	No
+Chhattisgarh	Day	4719	4.8	No
+Chhattisgarh	Day	5922	3.2	No
+Chhattisgarh	Day	3539	6.7	No
+Chhattisgarh	Day	4056	5.5	No
+Chhattisgarh	Day	3748	6.2	No
+Chhattisgarh	Day	4016	5.2	No
+Chhattisgarh	Day	4726	5.6	No
+Chhattisgarh	Day	5256	5.9	No
+Chhattisgarh	Day	3744	3	No
+Chhattisgarh	Day	3815	2.6	No
+Chhattisgarh	Day	4320	3.8	No
+Chhattisgarh	Day	5189	4.1	No
+Chhattisgarh	Day	3549	5.7	No
+Chhattisgarh	Day	5397	7.9	No
+Bihar	Night	4568	2.9	No
+Bihar	Night	6082	5.7	No
+Bihar	Night	6434	2.9	No
+Bihar	Night	5822	4.1	No
+Bihar	Night	6104	4.5	No
+Bihar	Night	6748	4.2	No
+Bihar	Night	4324	5.9	No
+Bihar	Night	4445	3.2	No
+Bihar	Day	4941	3.7	No
+Bihar	Day	6727	3.4	No
+Bihar	Day	5206	3.4	No
+Bihar	Day	4496	6.4	No
+Bihar	Day	6779	4	No
+Assam	Night	2366	2.9	No
+Assam	Night	2973	7.1	No
+Assam	Night	4012	6.6	No
+Assam	Night	3921	3.1	No
+Assam	Night	2916	3.8	No
+Assam	Night	3354	6.4	No
+Assam	Night	2440	5.8	No
+Assam	Night	3017	5.1	No
+Assam	Night	2809	3.3	No
+Assam	Night	3810	5.3	No
+Assam	Night	4006	3.5	No
+Assam	Day	2572	4.5	No
+Assam	Day	3627	4.4	No
+Assam	Day	4238	3.2	No
+Assam	Day	4159	5.3	No
+Assam	Day	3793	6.2	No
+Assam	Day	2817	6.6	No
+Assam	Day	4033	4.5	No
+Assam	Day	3157	6.7	No
+Assam	Day	4198	4.4	No
+Assam	Day	2683	3.2	No
+Assam	Day	3693	6.5	No
+Assam	Day	2311	6.5	No
+Assam	Day	3245	6.9	No
+Assam	Day	3216	6.2	No
+Assam	Day	2798	4.9	No
+Arunachal Pradesh	Night	1988	7	No
+Arunachal Pradesh	Day	2364	21	No
+Andhra Pradesh	Night	5575	5.9	No
+Andhra Pradesh	Night	2578	5.6	No
+Andhra Pradesh	Night	6713	7.9	No
+Andhra Pradesh	Night	3433	4.2	No
+Andhra Pradesh	Night	3077	6.5	No
+Andhra Pradesh	Night	4685	4	No
+Andhra Pradesh	Night	4414	5.9	No
+Andhra Pradesh	Night	6421	8.7	No
+Andhra Pradesh	Night	7718	5	No
+Andhra Pradesh	Night	3324	9.7	No
+Andhra Pradesh	Night	7140	6.7	No
+Andhra Pradesh	Day	8687	5.4	No
+Andhra Pradesh	Day	3184	3.3	No
+Andhra Pradesh	Day	6250	4.1	No
+Andhra Pradesh	Day	4985	8.3	No
+Andhra Pradesh	Day	6065	7	No
+Andhra Pradesh	Day	6417	8.3	No
