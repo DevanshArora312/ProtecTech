@@ -23,6 +23,8 @@ import {useSelector} from 'react-redux';
 import {RootState} from '../redux/store';
 import { apiConnector } from '../services/apiConnector';
 import { ALERT } from '../services/apis';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface Data {
   sosId: string,
@@ -93,56 +95,82 @@ export default function AlertTable() {
     return state.profile
   });
 
-  React.useEffect(()=>{
-    (async()=>{
-      if(officer){
-        console.log("pls wait....");
-        const response = await apiConnector({method: "POST", url : ALERT.alert, bodyData: {station_id: officer.thana_id}});
-        console.log(response);
-        setAlerts([]);
-        response.alerts.map((alert : {
-          longitude: string,
-          latitude: string,
-          user: {
-            firstname: string,
-            lastname: string,
-            gender: string,
-            occupation: string,
-            maritalStatus: boolean,
-            image: string,
-            employer: string,
-            mobile: string,
-            criminalBackground: boolean,
-            isEmployed: boolean,
-            bookmarkedContact: string[],
+  React.useEffect(() => {
+    (async () => {
+      if (officer) {
+        const loadingToast = toast.loading("Fetching alerts...");
+  
+        try {
+          const response = await apiConnector({
+            method: "POST",
+            url: ALERT.alert,
+            bodyData: { station_id: officer.thana_id }
+          });
+  
+          console.log(response);
+          setAlerts([]);
+          response.alerts.map((alert: {
+            longitude: string,
+            latitude: string,
+            user: {
+              firstname: string,
+              lastname: string,
+              gender: string,
+              occupation: string,
+              maritalStatus: boolean,
+              image: string,
+              employer: string,
+              mobile: string,
+              criminalBackground: boolean,
+              isEmployed: boolean,
+              bookmarkedContact: string[],
+              _id: string
+            }
             _id: string
-          }
-          _id: string
-        })=>{
-          setAlerts(prev => [...prev, createData(
-            alert._id,
-            alert.user.firstname,
-            alert.user.lastname,
-            alert.user.firstname + " " + alert.user.lastname,
-            alert.user.mobile,
-            `${Math.floor(Math.random() * 60)} minutes ago`,
-            alert.longitude,
-            alert.latitude,
-            alert.user.gender,
-            alert.user.occupation,
-            alert.user.maritalStatus,
-            alert.user.image,
-            alert.user.employer,
-            alert.user.criminalBackground,
-            alert.user.isEmployed,
-            alert.user.bookmarkedContact,
-            alert.user._id
-          )])
-        });
+          }) => {
+            setAlerts(prev => [
+              ...prev,
+              createData(
+                alert._id,
+                alert.user.firstname,
+                alert.user.lastname,
+                alert.user.firstname + " " + alert.user.lastname,
+                alert.user.mobile,
+                `${Math.floor(Math.random() * 60)} minutes ago`,
+                alert.longitude,
+                alert.latitude,
+                alert.user.gender,
+                alert.user.occupation,
+                alert.user.maritalStatus,
+                alert.user.image,
+                alert.user.employer,
+                alert.user.criminalBackground,
+                alert.user.isEmployed,
+                alert.user.bookmarkedContact,
+                alert.user._id
+              )
+            ]);
+          });
+  
+          toast.update(loadingToast, {
+            render: "Alerts fetched successfully!",
+            type: "success",
+            isLoading: false,
+            autoClose: 3000,
+          });
+        } catch (err) {
+          toast.update(loadingToast, {
+            render: "Failed to fetch alerts. Please try again.",
+            type: "error",
+            isLoading: false,
+            autoClose: 3000,
+          });
+          console.log(err);
+        }
       }
-
     })();
   }, [socket, officer]);
+  
 
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
