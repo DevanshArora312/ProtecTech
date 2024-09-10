@@ -3,7 +3,10 @@ import { Card, CardHeader, CardMedia, CardContent, CardActions, Avatar, IconButt
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import { blue } from '@mui/material/colors';
-
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 enum gender {
   "Male",
   "Female",
@@ -65,13 +68,26 @@ export function NearbyCard({ users }: {users:  user[]}) {
           We could detect <span className='text-2xl font-bold text-red-500'>{criminals.length}</span> criminal(s) in the vicinity of the user.
         </Typography>
         <div className='pt-4'>
-          {criminals.length > 0 && criminals.map((user, index) => (
-            <div key={index}>
-              <Typography variant='body2'>
-                <strong>{user.firstname} {user.lastname}</strong> - Age: {user.age}, Contact: {user.mobile}
-              </Typography>
-            </div>
-          ))}
+          {criminals.length > 0 && (
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography variant="h6">Criminals List</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                {criminals.map((user, index) => (
+                  <div key={index}>
+                    <Typography variant='body2'>
+                      <strong>{user.firstname} {user.lastname}</strong> - Age: {user.age}, Contact: {user.mobile}
+                    </Typography>
+                  </div>
+                ))}
+              </AccordionDetails>
+            </Accordion>
+          )}
         </div>
       </CardContent>
       <CardActions disableSpacing>

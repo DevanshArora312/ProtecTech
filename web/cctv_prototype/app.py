@@ -23,6 +23,11 @@ def generate_frames():
 def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
+
+@app.route('/threat')
+def detect_threat():
+    pass
+
 if __name__ == "__main__":
     print("app running at port number 5000")
     app.run(host='0.0.0.0', port=5000)

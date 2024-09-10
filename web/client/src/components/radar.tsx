@@ -8,6 +8,8 @@ import radar from '../assets/animated_radar.gif';
 import { Slider } from '@mui/material';
 import { apiConnector } from '../services/apiConnector';
 import { DETECT } from '../services/apis';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 enum gender {
   "Male",
@@ -38,14 +40,35 @@ interface radarProps {
 }
 
 export default function Radar({distance, latitude, longitude, setUsers} : radarProps) {
-    const detectHandler = async()=>{
-        try{
-            const response = await apiConnector({method : "POST", url: DETECT.login, bodyData: {distance, latitude, longitude}});
-            setUsers(response.data);
-        } catch(err){
-            console.log(err);
-        }
+  const detectHandler = async () => {
+    const loadingToast = toast.loading("Detecting users...");
+  
+    try {
+      const response = await apiConnector({
+        method: "POST",
+        url: DETECT.login,
+        bodyData: { distance, latitude, longitude }
+      });
+  
+      setUsers(response.data);
+      
+      toast.update(loadingToast, {
+        render: "Users detected successfully!",
+        type: "success",
+        isLoading: false,
+        autoClose: 3000,
+      });
+    } catch (err) {
+      toast.update(loadingToast, {
+        render: "Failed to detect users. Please try again.",
+        type: "error",
+        isLoading: false,
+        autoClose: 3000,
+      });
+      console.log(err);
     }
+  };
+  
     return (
       <Card sx={{ maxWidth: 450 }}>
         <CardMedia

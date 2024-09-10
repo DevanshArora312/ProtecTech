@@ -10,9 +10,13 @@ export const Dashboard = () => {
             socket.on("updateAlerts",({alerts}) => {
                 console.log(alerts);
             })
+            socket.on("newMessage", (newMessage)=>{
+                console.log(newMessage);
+            })
         }
       return () => {
           socket?.off("new_group_message");
+          socket?.off("newMessage");
       }
     }, [socket]);
     return (

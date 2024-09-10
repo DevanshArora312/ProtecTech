@@ -1,25 +1,25 @@
 const express = require('express');
 const router = express.Router();
 const Messages = require('../models/messages'); 
+const User = require('../models/user'); 
 const mongoose = require("mongoose");
 router.get('/messages/:userId', async (req, res) => {
     try {
         const { userId } = req.params;
-
-        const messages = await Messages.find({ user: new mongoose.Types.ObjectId(userId)})
+        const user = await User.findById(userId).populate("messages").exec();
         
-        console.log(messages);
+        console.log(user);
 
-        if (!messages || messages.length === 0) {
+        if (!user) {
             return res.status(404).json({
                 success: false,
-                message: 'No messages found for this user',
+                message: "something went wrong",
             });
         }
 
         return res.status(200).json({
             success: true,
-            data: messages,
+            data: user.messages,
         });
     } catch (error) {
         console.error(error);
