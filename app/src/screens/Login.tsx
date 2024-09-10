@@ -18,7 +18,7 @@ const Login = ({navigation} : {navigation : any}) => {
                 <Text className='text-black font-bold text-[30px] text-center'>Mobile Number</Text>
                 <Text className='text-slate-400 font-semibold text-[20px] text-center my-2' >Please enter your Mobile Number</Text>
             </View>
-            <TextInput maxLength={10} className='border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[80%] h-14 text-center' keyboardType='numeric'/>
+            <TextInput maxLength={10} className='text-black border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[80%] h-14 text-center' keyboardType='numeric'/>
             <TouchableOpacity
                 className='bg-[#FE5E5C] rounded-xl px-4 py-2'
                 onPress={handleLogin}

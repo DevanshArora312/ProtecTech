@@ -57,10 +57,10 @@ const OTP = ({navigation} : {navigation : any}) => {
                     <Text className='text-slate-400 font-semibold text-[20px] text-center mb-2' >we sent to your mobile phone</Text>
                 </View>
                 <View className='w-full px-2 flex-row gap-x-4 justify-center items-center'>
-                    <TextInput maxLength={1} className='border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
-                    <TextInput maxLength={1} className='border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
-                    <TextInput maxLength={1} className='border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
-                    <TextInput maxLength={1} className='border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
+                    <TextInput maxLength={1} className='text-black border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
+                    <TextInput maxLength={1} className='text-black border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
+                    <TextInput maxLength={1} className='text-black border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
+                    <TextInput maxLength={1} className='text-black border-[1px] rounded-lg border-[#FE5E5C] p-2 w-[17%] h-14 text-center' keyboardType='numeric'/>
                 </View>
                 <TouchableOpacity
                     className='bg-[#FE5E5C] rounded-xl px-4 py-2'
