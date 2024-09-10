@@ -14,3 +14,36 @@
 5. **Mayank Aggarwal** (2022UIT3115) - [@MAYANK240903](https://github.com/MAYANK240903)
 6. **Yashi Pitti** (2022UCA1909) - [@YashiPi](https://github.com/YashiPi)
 
+## Installation Steps
+
+### 1. Clone the Repository
+
+First, clone the **ProtecTech** repository:
+
+```bash
+git clone https://github.com/DevanshArora312/SIH_2K24.git
+cd web
+```
+
+### 2. Set Up the Client (React)
+Navigate to the client folder and install the dependencies:
+
+```bash
+cd client
+npm install
+```
+
+### 3. Once installation is complete, navigate back to the server folder in web:
+```bash
+cd..
+cd server
+npm i
+npx nodemon index
+```
+
+### 4. Once installation is complete, start the React app:
+```bash
+cd ..
+cd client
+npm run start
+```
